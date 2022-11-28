@@ -6,33 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css" />
     <!-- <script src="script.js"></script> -->
 </head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <body class = "home-page-template">
-    <header id="page-header" class="page-header">
-        <div id="header-row" class="row">
-            <div class = "header-container">
-                <div id="header-left" class="header-left">
-                    <img id="logo" alt src="https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/278569272_1292297954630849_5873447721404603646_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f0-mjOvB9DkAX-Br1Kv&_nc_ht=scontent.fsof8-1.fna&oh=00_AfCgZQD3v6zAeJfn48kFHewqhArv4XrfKVmcWop9fSfcVQ&oe=63853806" style="width:5em; height:5em;">
-                    <div class="menu-container">
-                        <ul id ="main-menu" class="menu-list">
-                            <li><a href="hex.html">Home</a></li>
-                            <li><a href="index.html">Property Management</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="header-center" class="header-center">
-                </div>
-                <div id="header-right" class="header-right">
-                    <a id="link-book" class="link-book" href=>
-                        "book"
-                        <br>
-                        "now"
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <header class="page-header">
+      <div class="header-left">
+         <img class="logo" alt src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/LogoFinalMMM_5.png">
+
+         <div class="topnav" id="myTopnav">
+            <a href="hex.html" class="active">Home</a>
+            <a href="index.html">Property Management</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+      </div>
+      <a class="header-right-link" href="">
+         <div class="header-right">
+            <span class="text-book">
+               book
+               <br>
+               now
+            </span>
+         </div>
+      </a>
     </header>
     <ul class="slideshow-container">
         <li class="slide1">
@@ -56,48 +55,48 @@
            <p id="description" class="text">We specialize in helping home owners who are facing hardship or special circumstances sell their property quickly. We understand the difficulties of these situations, and we have made it our goal to have a positive impact on those we work with. We truly care about people and we stand by our name: MMM Investments.<br>
            </p>
            <img id="page-divider" src="http://onepage2.oxy.host/wp-content/uploads/sites/19/2017/11/Rectangle-15-Copy-6@2x.png" class="sc-image">
-           <div id="new-column" class="sc-new-columns">
-              <div id="div_block-303-18" class="facts-blocks">
-                 <div id="fancy_icon-304-18" class="fancy-icon">
+           <div id="new-row">
+              <div class="facts-blocks">
+                 <div id="sc-img-text1" class="text-imgs">Five star service, always.<br></div>
+                 <!-- <div id="fancy_icon-304-18" class="fancy-icon">
                     <svg id="fancy-icon-star">
                        <use xlink:href=""></use>
                     </svg>
-                 </div>
-                 <div id="sc-img-text1" class="text">Five star service, always.<br>
-                 </div>
+                 </div> -->
               </div>
-              <div id="div_block-306-18" class="facts-blocks">
-                 <div id="fancy_icon-307-18" class="fancy-icon">
-                    <svg id="fancy-icon-users">
-                       <use xlink:href=""></use>
-                    </svg>
-                 </div>
-                 <div id="sc-img-text2" class="text">1,000s of happy customers.<br></div>
-              </div>
-              <div id="div_block-309-18" class="facts-blocks">
-                 <div id="fancy_icon-310-18" class="fancy-icon">
-                    <svg id="fancy-icon-earth">
-                       <use xlink:href=""></use>
-                    </svg>
-                 </div>
-                 <div id="sc-img-text3" class="text">We’re your neighbors<br>(and have been for years).<br></div>
-              </div>
-              <div id="div_block-312-18" class="facts-blocks">
-                 <div id="fancy_icon-313-18" class="fancy-icon">
-                    <svg id="fancy-icon-clock">
-                       <use xlink:href=""></use>
-                    </svg>
-                 </div>
-                 <div id="sc-img-text4" class="text">Quick cash quarantee.<br></div>
-              </div>
-           </div>
+              <div class="facts-blocks">
+               <div id="sc-img-text1" class="text-imgs">1,000s of happy customers.<br></div>
+               <!-- <div id="fancy_icon-304-18" class="fancy-icon">
+                  <svg id="fancy-icon-star">
+                     <use xlink:href=""></use>
+                  </svg>
+               </div> -->
+               </div>
+               <div class="facts-blocks">
+                  <div id="sc-img-text1" class="text-imgs">We’re your neighbors
+                     (and have been for years).<br></div>
+                  <!-- <div id="fancy_icon-304-18" class="fancy-icon">
+                     <svg id="fancy-icon-star">
+                        <use xlink:href=""></use>
+                     </svg>
+                  </div> -->
+               </div>
+               <div class="facts-blocks">
+                <div id="sc-img-text1" class="text-imgs">Quick cash quarantee.<br></div>
+                <!-- <div id="fancy_icon-304-18" class="fancy-icon">
+                   <svg id="fancy-icon-star">
+                      <use xlink:href=""></use>
+                   </svg>
+                </div> -->
+                </div>
+             </div>
         </div>
      </section>
      <section id="ceo-section" class="section">
         <div class="inner-wrap">
               <div id="image-block" class="ceo-blocks">
                  <div id="ceo-img-block" class="ceo-blocks">
-                    <img id="ceo" src="https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/284018762_1318025862058058_5533007082283689944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=go_YO4XzJuMAX8tbtlu&_nc_ht=scontent.fsof11-1.fna&oh=00_AfCJyyogAYAJ2EpMOnb3-yUeNx0du_OuLZQNUlv_tn75Qg&oe=63878FAE" style="height:40em">
+                    <img id="ceo" src="https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/284018762_1318025862058058_5533007082283689944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=go_YO4XzJuMAX8tbtlu&_nc_ht=scontent.fsof11-1.fna&oh=00_AfCJyyogAYAJ2EpMOnb3-yUeNx0du_OuLZQNUlv_tn75Qg&oe=63878FAE">
                     <h1 id="headline-ceo" class="headline">Fareed Abedini</h1>
                     <div id="new-columns-ceo" class="">
                        <div id="number-block" class="ceo-blocks">
@@ -156,5 +155,16 @@
             </div>
         </div>
     </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
 </body>
 </html>
