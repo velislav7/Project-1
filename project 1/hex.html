@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="slideshow.css" />
     <!-- <script src="script.js"></script> -->
 </head>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -49,7 +50,32 @@
          </div>
       </a>
     </header>
-    <ul class="slideshow-container">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img class="bg-image" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+        <div class="text-slideshow">
+           <span class="text-slideshow-sm">LIGHTNING FAST</span>
+           <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
+           <a href="tel:"><button class="btn" type="button">get cash offer now</button></a>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img class="bg-image" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+        <div class="text-slideshow">
+         <span class="text-slideshow-sm">We specialize in buying homes for a fair, cash price - quickly and easily.</span>
+         <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
+         <a href="tel:"><button class="btn" type="button">get cash offer now</button></a>
+      </div>
+      </div>
+      
+      
+   </div>
+
+
+
+    <!-- <ul class="slideshow-container">
         <li class="slide1">
             <div class="slide">
                 <h4 id="slide2-upper-text" class="text">We specialize in buying homes for a fair, cash price – quickly and easily.</h4>
@@ -64,7 +90,7 @@
                 <button id="get-offer-btn" class="btns" type="button">get cash offer now</button>
             </div>
         </li>
-    </ul>
+    </ul> -->
     <section id="description-section" class="section">
         <div class="description">
            <h2 id="description-headline" class="headline">WE WANT TO BUY YOUR HOME FOR CASH</h2>
@@ -183,6 +209,22 @@
             }
          }
          } 
+
+
+         let slideIndex = 0;
+         showSlides();
+
+         function showSlides() {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+         }
+         slideIndex++;
+         if (slideIndex > slides.length) {slideIndex = 1}    
+         slides[slideIndex-1].style.display = "block";  
+         setTimeout(showSlides, 10000); // Change image every 10 seconds
+         }
       </script>
 </body>
 </html>
