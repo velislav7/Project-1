@@ -1,0 +1,120 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    
+    
+  }
+  
+  
+  
+  /* Navigation Bar */
+  
+  header{
+    box-shadow: 1px 1px 10px rgb(134, 134, 134);
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .header-left{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  
+  .logo{
+    height: 60%;
+    margin-left: 2em;
+    padding-right:0.5em;
+    border-right: 3px solid rgb(187, 187, 187);
+  }
+  
+  .header-right-link{
+    height: 100%;
+   
+  }
+  
+  .header-right{
+    background-color: rgb(82, 26, 160);
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  
+  .header-right:hover{
+    transition: all;
+    transition-duration: 150ms;
+    background-color: rgb(89, 52, 191);
+  }
+
+  .text-book {
+    font-size: 1em;
+    font-weight: bolder;
+    padding:0em 1.5em;
+    text-transform: uppercase;
+    color:white;
+    text-align: center;
+  }
+  #upper-page{
+    width: 100%;
+    background-image: url("https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/256393520_1194206011106711_5476555368711413621_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=pYnc-DBKAhcAX9F0PF5&tn=axWwyqJEhznI9eRA&_nc_ht=scontent.fsof8-1.fna&oh=00_AfAX-on8ywn8vi5hIpdnhigIFMkzCcOZUm0Mv31LDT9fGw&oe=63894043");
+    height: 600px;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Vidaloka'
+  }
+
+  #headline{
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 700;
+  }
+
+  #subtitle{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #number-link{
+    color: #ffffff;
+    font-size: 27px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #about-us-btn{
+    background-color: transparent;
+    color: azure;
+    height: 100%;
+    font-weight:600;
+    border: 3px solid rgb(255, 255, 255);
+    font-size:1.8ch;
+    text-align: center;
+    height: 55px;
+    width: 160px;
+
+  }
+  
+  #about-us-btn:hover{
+    transition: all;
+    transition-duration: 350ms;
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
