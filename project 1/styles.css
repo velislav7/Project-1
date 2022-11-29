@@ -167,23 +167,19 @@ header{
 }
 
 .facts-blocks {
-  padding: 1rem;
-  height: 4rem;
-  width: 25%;
+  text-align: center;
 }
 
-#new-row{
-  display: flex;
+#new-row{ 
+  display: grid;
+  gap:5em;
+  grid-template-columns: auto auto auto auto;
   width: 100%;
-  flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 8em auto;
 }
+
 
 .text-imgs{
   color: rgb(133, 133, 133);
@@ -200,3 +196,15 @@ header{
 
 }
 
+@media screen and (max-width: 992px) {
+  #new-row{ 
+    grid-template-columns: auto auto;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #new-row{ 
+    grid-template-columns: auto;
+  }
+}
