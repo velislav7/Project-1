@@ -97,7 +97,7 @@ header{
 }
 
 .facts-blocks {
-  text-align: center;
+  text-align: left;
 }
 
 #new-row{ 
@@ -107,7 +107,7 @@ header{
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 8em auto;
+  margin: 3.5em auto;
 }
 
 
@@ -231,6 +231,7 @@ header{
   transition: all;
   transition-duration: 150ms;
   background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 #headline-ceo{
@@ -254,3 +255,12 @@ header{
   text-align: center;
   font-size: 17px;
 }
+
+
+.icon-fact{
+  width: 3em;
+  padding: 1em auto;
+  color:#324481;
+  margin: 1em 0px;
+}
+
