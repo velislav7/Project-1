@@ -5,6 +5,7 @@ img {vertical-align: middle;}
 .slideshow-container {
     background-color: black;
     max-width: 100%;
+    height: auto;
     position: relative;
     margin: auto;
 }
@@ -19,7 +20,6 @@ img {vertical-align: middle;}
     display: flex;
     flex-direction: column;
     color: #f2f2f2;
-    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     top: 50%;
@@ -73,3 +73,54 @@ img {vertical-align: middle;}
   from {opacity: .1} 
   to {opacity: 1}
 }
+
+
+@media screen and (max-width: 1100px) {
+    .text-slideshow-sm{
+        font-size: 0.7em;
+        letter-spacing: 0.2em;
+    }
+    
+    .text-slideshow-xl{
+        font-size: 2em;
+        margin: 0.3em auto;
+    }
+    
+    
+    .btn{
+        font-size: 1em;
+        margin: auto;
+        width: 30%;
+        padding: 0.8em 1em;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .text-slideshow-sm{
+        font-size: 0.5em;
+        letter-spacing: 0.2em;
+    }
+    
+    .text-slideshow-xl{
+        font-size: 1.5em;
+        margin: 0.3em auto;
+    }
+    
+    
+    .btn{
+        font-size: 1em;
+        margin: auto;
+        width: 15em;
+        padding: 0.5em 0.8em;
+    }
+
+    .bg-image{
+        height: 30em;
+    }
+
+    .slideshow-container {
+        background-color: black;
+        height: 30em;
+    
+    }
+  }
