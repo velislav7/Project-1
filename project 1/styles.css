@@ -168,6 +168,48 @@ header{
 
 
 
+.ceo-section{
+  display: flex;
+  width: 100%;
+  background-color: red;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 10em;
+}
+
+.bio-block{
+  border-radius: 1em;
+  max-width: 50%;
+  display: flex;
+  color:white;
+  flex-direction: column;
+  background: rgb(50,0,105);
+  background: linear-gradient(50deg, rgb(76, 4, 153) 0%, rgba(66,0,255,1) 100%); 
+}
+
+.bio-block-headline{
+  padding: 0em 1em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+.bio-block-text{
+  padding: 1em 2.5em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+}
+
+.bio-block-text div{
+  margin: 0em 1em;
+}
+
+.bio-block img {
+  border-radius: 1em 1em 0em 0em;
+}
+
 .ceo-blocks{ 
   border: 3px solid rgb(219, 20, 20);
   justify-content: center;
@@ -177,37 +219,31 @@ header{
   margin-bottom: 40px;
 }
 
-.p-headings{
-  padding: 1% 5%;
-  color: #324481;
-  font-family: 'Vidaloka';
-  width: 100%;
-  height: auto;
-  font-weight: bold;
+.text-block{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  color:white;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+} 
+
+
+.dropdowns-component{
+  display: flex;
+  flex-direction: column;
 }
 
-#project-role{
-  color: #321066;
-  font-family: 'Vidaloka';
-  font-weight: bold;
-  padding: 1% 4%;
+.dropdown-text{
+  display: none;
 }
 
-.paragraph-texts{
-  text-align: left;
-  align-items: left;
-  font-size: 1em;
-  color: rgb(133, 133, 133);
-  padding: 1% 4%;
+.dr-show{
+  display: block;
+  color: wheat;
 }
-#name{
-  color: #324481;
-  font-family: 'Vidaloka';
-  font-weight: bolder;
-  font-size:6ch;
-  padding: 1% 3%;
-}
- 
+
 #call-now-btn{
   background-color: #324481;
   color: azure;
@@ -232,28 +268,6 @@ header{
   transition-duration: 150ms;
   background-color: rgb(255, 255, 255);
   color: black;
-}
-
-#headline-ceo{
-  font-size: 65px;
-  font-weight: 400;
-  color: rgb(237, 240, 241);
-  line-height: 0.9;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-#new-columns-ceo{
-  color: #ececec;
-  font-size: 1em;
-  font-weight: 500;
-  line-height: 5;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  text-align: center;
-  font-size: 17px;
 }
 
 

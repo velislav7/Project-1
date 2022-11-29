@@ -1,3 +1,6 @@
+
+// Dropdown Navigation
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
  }
@@ -17,6 +20,8 @@ function myFunction() {
  } 
 
 
+//  Slideshow
+
  let slideIndex = 0;
  showSlides();
 
@@ -31,3 +36,16 @@ function myFunction() {
  slides[slideIndex-1].style.display = "block";  
  setTimeout(showSlides, 10000); // Change image every 10 seconds
  }
+
+
+//  Dropdown Reveal
+
+function Reveal1() {
+   document.getElementById("dropdown-text-1").classList.toggle("dropdown-text");
+}
+function Reveal2() {
+   document.getElementById("dropdown-text-2").classList.toggle("dropdown-text");
+}
+function Reveal3() {
+   document.getElementById("dropdown-text-3").classList.toggle("dropdown-text");
+}
