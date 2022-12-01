@@ -19,6 +19,7 @@ html, body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Montserrat'
   }
   
   
@@ -196,9 +197,6 @@ html, body{
   color:#000000;
 }
 
-.title{
-  margin-bottom: 2em;
-}
 
 .headline-rentals{
   line-height: 1em;
