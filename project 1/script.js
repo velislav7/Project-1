@@ -42,10 +42,34 @@ function myFunction() {
 
 function Reveal1() {
    document.getElementById("dropdown-text-1").classList.toggle("dropdown-text");
+   const icon = document.getElementById("dr-i-1")
+   if (icon.innerHTML == "-"){
+      icon.innerHTML ="+"
+   }
+   else{
+      icon.innerHTML ="-"
+   }
 }
 function Reveal2() {
    document.getElementById("dropdown-text-2").classList.toggle("dropdown-text");
+   const icon = document.getElementById("dr-i-2")
+   if (icon.innerHTML == "-"){
+      icon.innerHTML ="+"
+   }
+   else{
+      icon.innerHTML ="-"
+   }
+
 }
 function Reveal3() {
    document.getElementById("dropdown-text-3").classList.toggle("dropdown-text");
+   const icon = document.getElementById("dr-i-3")
+   if (icon.innerHTML == "-"){
+      icon.innerHTML ="+"
+   }
+   else{
+      icon.innerHTML ="-"
+   }
+
+
 }
