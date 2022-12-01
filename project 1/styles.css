@@ -2,7 +2,8 @@
 html, body{
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat';
+
+  font-family: 'Vidaloka'
   
 }
 
@@ -19,6 +20,7 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Montserrat';
 }
 
 
@@ -143,6 +145,7 @@ header{
   align-items: flex-start;
   justify-content: center;
   padding: 1em 2em;
+  font-family: 'Vidaloka';
   
 }
 
@@ -151,6 +154,7 @@ header{
   display: flex;
   color:white;
   flex-direction: column;
+
   background: linear-gradient(50deg, rgb(46, 0, 94) 0%, rgb(90, 1, 234) 100%); 
 }
 
@@ -158,7 +162,7 @@ header{
   padding: 0em 1em;
   margin-bottom: 1em;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .bio-block-text{
@@ -170,7 +174,8 @@ header{
   flex-direction: row;
   justify-content: space-around;
   margin: 0em 1em;
-  font-size: 0.8em;
+  font-size: 1em;
+  font-family: 'Vidaloka';
 }
 
 .bio-block-text div{
@@ -219,6 +224,8 @@ header{
   display: flex;
   flex-direction: column;
   margin-top:2em;
+  font-family: 'Vidaloka';
+
 }
 
 .dropdown-header{
@@ -228,6 +235,8 @@ header{
   color:darkblue;
   padding: 0;
   margin: 0;
+  font-family: 'Vidaloka';
+
 }
 
 .dropdown-text{

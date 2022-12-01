@@ -81,19 +81,21 @@ html, body{
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: 'Vidaloka'
+    font-family: 'Vidaloka';
   }
 
   #headline{
     color: #ffffff;
     font-size: 3em;
     font-weight: 700;
+    
   }
 
   #subtitle{
     color: #ffffff;
     font-size: 20px;
     text-align: center;
+    font-family: 'Vidaloka';
   }
 
   #number-link{
