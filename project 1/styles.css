@@ -163,6 +163,8 @@ header{
 
 .bio-block-text{
   padding: 5em 0em 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   margin-top: 3em;
   display: flex;
   flex-direction: row;
@@ -282,5 +284,124 @@ header{
   padding: 1em auto;
   color:#324481;
   margin: 1em 0px;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .ceo-section{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    gap: 3em;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em 2em;
+    
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .ceo-section{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    gap: 3em;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em 2em;
+    
+  }
+
+  .name{
+    font-size: 2em;
+    color:teal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .position{
+    font-size: 1.5em;
+    color:teal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdowns-component{
+    display: flex;
+    flex-direction: column;
+    margin-top:1.5em;
+  }
+  
+  .dropdown-header{
+    background-color: transparent;
+    font-size: 1.5em;
+    border:none;
+    color:darkblue;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .ceo-section{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 80%;
+    gap: 3em;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em 2em;
+    
+  }
+
+  .bio-block-text{
+    padding: 3em 1em;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0em 1em;
+    font-size: 1em;
+  }
+
+  .bio-block-text div{
+    margin: 1em 1em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .ceo-section{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 90%;
+    gap: 3em;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em 2em;
+    
+  }
+
+  .bio-block-text{
+    padding: 3em 1em;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0em 1em;
+    font-size: 1em;
+  }
+
+  .bio-block-text div{
+    margin: 1em 1em;
+  }
 }
 
