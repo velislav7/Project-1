@@ -1,9 +1,7 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Vidaloka'
-    
-    
+    font-family: 'Lato', sans-serif;
   }
   
   
@@ -19,9 +17,11 @@ html, body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Montserrat'
-  }
+    letter-spacing: 1px;
+    text-transform: uppercase;
   
+    
+  }
   
   .header-left{
     height: 100%;
@@ -29,6 +29,7 @@ html, body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    
     
   }
   
