@@ -15,28 +15,29 @@ html, body{
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: 'Vidaloka';
   }
 
   #headline{
     color: #ffffff;
-    font-size: 3em;
+    font-size: 4.5em;
     font-weight: 700;
     
   }
 
   #subtitle{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
     font-family: 'Vidaloka';
+    font-weight: 500;
   }
 
   #number-link{
     color: #ffffff;
-    font-size: 27px;
+    font-size: 1.7em;
     text-align: center;
     text-decoration: none;
+    font-family: 'Vidaloka';
   }
 
   .about-us-btn{
@@ -45,8 +46,7 @@ html, body{
     cursor: pointer;
     background-color: transparent;
     color: azure;
-    height: 100%;
-    font-weight:600;
+    font-weight:400;
     border: 3px solid rgb(255, 255, 255);
     font-size:1.8ch;
     padding: 0.8em 1.5em;
@@ -99,6 +99,10 @@ html, body{
   max-width: 100%;
   margin: auto;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  color: #404040;
+  font-weight: 500;
 }
 
 
@@ -114,11 +118,17 @@ html, body{
 .text-rentals{
   list-style-type: "━ ";
   color:#000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25em;
+  color: #404040;
 }
 
 
 .headline-rentals{
   line-height: 1em;
+  font-size: 2em;
+  font-weight: 600;
+  
 }
 
 
@@ -128,9 +138,9 @@ html, body{
   cursor: pointer;
   background-color: transparent;
   color: rgb(0, 0, 0);
-  font-weight:350;
+  font-weight:550;
   border: 3px solid rgb(0, 0, 0);
-  font-size:1.4ch;
+  font-size:1.6ch;
   padding: 1em 1em;
   text-align: center;   
   text-decoration: none;
@@ -158,9 +168,7 @@ html, body{
     justify-content: center;
 }
 
-.e-mail-link{
-  margin-bottom: 2em;
-}
+
 .info {
   background-color:#ffffff;
   max-width:60%;
@@ -182,7 +190,7 @@ html, body{
   cursor: pointer;
   background-color: transparent;
   color: rgb(0, 0, 0);
-  font-weight: 550;
+
   border: 3px solid rgb(0, 0, 0);
   font-size:2ch;
   padding: 0.5em 1em;
@@ -199,28 +207,37 @@ html, body{
   color: rgb(255, 255, 255);
 }
 
-.contact-link, #adress{
+.contact-link{
   text-decoration: none;
-  color: #000000;
-  font-size: 1.2em;
+  color: #1f0549;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+
   
+}
+
+#adress{
+  color: #404040;
+  margin-bottom: 0.5em;
 }
 
 .contact-link:hover{
   text-decoration: none;
-  color: #0e0e46;
+  color: #17176f;
   
 }
 
 .contact-headline{
   line-height: 1.2em;
-  font-size: 3em;
+  font-size: 2em;
+  font-family: 'Vidaloka';
 }
 
 .block-headline{
   color: whitesmoke;
   font-size: 6ch;
   margin-bottom: 1em;
+  font-family: 'Vidaloka';
 }
 
 .contact-us-block{
@@ -288,7 +305,10 @@ html, body{
   #headline{
     font-size:3em;
   }
-
+  .title-grid{
+    padding: 0em 1em;
+  }
+  
   .contact-us-block{ 
     height: 100%;
   }
