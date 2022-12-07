@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="slideshow-container">
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php bloginfo('template_url'); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
+        <img class="bg-image" src="<?php echo wp_get_attachment_image( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
         <div class="text-slideshow">
            <span class="text-slideshow-sm">LIGHTNING FAST</span>
            <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
@@ -10,7 +10,7 @@
       </div>
       
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php bloginfo('template_url'); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
+        <img class="bg-image" src="<?php echo wp_get_attachment_image( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
         <div class="text-slideshow">
             <span class="text-slideshow-sm">We specialize in buying homes for a fair, cash price - quickly and easily.</span>
             <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
