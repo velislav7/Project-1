@@ -17,3 +17,5 @@ function add_script()
 }
 add_action('wp_enqueue_scripts', 'add_script');
 
+add_theme_support( 'post-thumbnails' );
+
