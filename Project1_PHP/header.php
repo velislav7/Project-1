@@ -13,7 +13,16 @@
 <body class = "home-page-template">
    <header class="page-header">
       <div class="header-left">
-         <img class="logo" alt src="<?php bloginfo('template_url'); '/https://mmminvestmentgroup.com/wp-content/uploads/2022/09/LogoFinalMMM_5.png'?>">
+
+         <?php
+         if(function_exists('the_custom_logo')){
+
+            $custom_logo_id = get_theme_mod ('custom_logo');
+            $logo = wp_get_attachment_image_src($custom_logo_id);
+            
+         }
+         ?>
+         <img class="logo" alt src="<?php echo $logo[0] ?>">
 
          <div class="nav">
             <input type="checkbox" id="nav-check">
@@ -27,15 +36,21 @@
             
             <div class="nav-links">
               <a class="active" href="hex.html">Home</a>
-              <a class="" href="index.html">Property Management</a>
+              <a class="" href="index.html">
+                  <?php echo get_blockinfo('name'); ?>
+              </a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="hex.html">Home</a>
-              <a href="index.html">Property Managment</a>
+              <a href="hex.html">
+                  <?php echo get_blockinfo('name'); ?>
+              </a>
+              <a href="index.html">
+                  <?php echo get_blockinfo('name2'); ?>
+              </a>
             </div>
          </div> 
       </div>
