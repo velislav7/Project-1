@@ -44,7 +44,11 @@
             <a id="call-now-btn" href="tel:240-994-8325">CALL NOW</a>
          </div>
      </section>
+
+     <?php 
+     wp_footer(); 
+     ?>
+
      </body>
 </html>
 
-     <?php wp_footer(); ?>
