@@ -13,7 +13,7 @@
 <body class = "home-page-template">
    <header class="page-header">
       <div class="header-left">
-
+         <!-- CUSTOM LOGO -->
          <?php
          if(function_exists('the_custom_logo')){
 
