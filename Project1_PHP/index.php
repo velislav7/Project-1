@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+   get_header(); 
+?>
+
 <div class="slideshow-container">
       <div class="mySlides fade">
         <img class="bg-image" src="<?php echo wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
@@ -54,4 +57,7 @@
              </div>
         </div>
      </section>
-<?php get_footer(); ?>
+
+<?php 
+   get_footer(); 
+?>
