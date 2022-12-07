@@ -1,6 +1,6 @@
 <section class="ceo-section">
         <div class="bio-block">
-            <img id="ceo" src="<?php bloginfo('template_url'); '/https://mmminvestmentgroup.com/wp-content/uploads/2022/09/image.png'?>">
+            <img id="ceo" src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/image.png">
             <h1 class="bio-block-headline">Fareed Abedini</h1>
             <div class="bio-block-text">
                <div class="number">240-994-8325</div>
