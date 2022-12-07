@@ -17,5 +17,11 @@ function add_script()
 }
 add_action('wp_enqueue_scripts', 'add_script');
 
+function followandrew_theme_support(){
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-logo' );
+add_theme_support( 'custom-header' );
+}
+
+add_action('after_setup_theme', 'followandrew_theme_support');
 
