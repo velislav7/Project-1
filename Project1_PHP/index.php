@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="slideshow-container">
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php echo wp_get_attachment_image( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
+        <img class="bg-image" src="<?php echo wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
         <div class="text-slideshow">
            <span class="text-slideshow-sm">LIGHTNING FAST</span>
            <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
@@ -10,7 +10,7 @@
       </div>
       
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php echo wp_get_attachment_image( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
+        <img class="bg-image" src="<?php echo wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ); '/https://www.w3schools.com/howto/img_mountains_wide.jpg'?>" style="width:100%">
         <div class="text-slideshow">
             <span class="text-slideshow-sm">We specialize in buying homes for a fair, cash price - quickly and easily.</span>
             <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
@@ -23,7 +23,7 @@
            <h2 id="description-headline" class="headline">WE WANT TO BUY YOUR HOME FOR CASH</h2>
            <p id="description" class="text">We specialize in helping home owners who are facing hardship or special circumstances sell their property quickly. We understand the difficulties of these situations, and we have made it our goal to have a positive impact on those we work with. We truly care about people and we stand by our name: MMM Investments.<br>
            </p>
-           <img id="page-divider" src="<?php bloginfo('template_url'); '/http://onepage2.oxy.host/wp-content/uploads/sites/19/2017/11/Rectangle-15-Copy-6@2x.png'?>" class="sc-image">
+           <img id="page-divider" src="<?php echo wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ); '/http://onepage2.oxy.host/wp-content/uploads/sites/19/2017/11/Rectangle-15-Copy-6@2x.png'?>" class="sc-image">
            <div id="new-row">
               <div class="facts-blocks">
                  <svg class="icon-fact" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
