@@ -1,6 +1,6 @@
-<header class="page-header">
+    <header class="page-header">
       <div class="header-left">
-         <img class="logo" alt src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/LogoFinalMMM_5.png">
+         <img class="logo" alt src="<?php bloginfo('template_url'); '/https://mmminvestmentgroup.com/wp-content/uploads/2022/09/LogoFinalMMM_5.png'?>">
 
          <div class="nav">
             <input type="checkbox" id="nav-check">
