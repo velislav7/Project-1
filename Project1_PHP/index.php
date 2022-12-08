@@ -6,10 +6,13 @@
       <div class="mySlides fade">
         <img class="bg-image" src="<?php the_post_thumbnail_url(); ?>" style="width:100%">
         <div class="text-slideshow">
+
          <!-- CUSTOM TITLE -->
-           <span class="text-slideshow-sm"><?php echo get_bloginfo('name'); ?></span>
-           <span class="text-slideshow-xl">NO-OBLIGATION CASH OFFERS</span>
-           <a href="tel:"><button class="btn" type="button">get cash offer now</button></a>
+        <?php $hero = get_field('hero');?>
+   
+           <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
+           <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
+           <a href="tel:"><button class="btn" type="button"><?php echo $hero['link_text'];?></button></a>
         </div>
       </div>
       
