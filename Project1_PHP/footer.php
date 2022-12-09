@@ -1,4 +1,5 @@
 <section class="ceo-section">
+<?php $hero = get_field('hero');?>
         <div class="bio-block">
             <img id="ceo" src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/image.png">
             <h1 class="bio-block-headline"><?php echo $hero['ceo_name_box'];?></h1>
@@ -7,7 +8,7 @@
                <div class="e-mail"><?php echo $hero['e-mail_box'];?></div>
             </div>
         </div>
-        <?php $hero = get_field('hero');?>
+
         <div class="text-block">
             <div>
                <h1 class="name"><?php echo $hero['ceo_name_bio'];?></h1>
