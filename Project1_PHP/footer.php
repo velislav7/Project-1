@@ -7,6 +7,7 @@
                <div class="e-mail"><?php echo $hero['e-mail_box'];?></div>
             </div>
         </div>
+        <?php $hero = get_field('hero');?>
         <div class="text-block">
             <div>
                <h1 class="name"><?php echo $hero['ceo_name_bio'];?></h1>

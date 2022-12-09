@@ -40,7 +40,7 @@
               </label>
             </div>
             
-
+            <?php $hero = get_field('hero');?>
             <div class="nav-links">
               <a class="active" href="hex.html"><?php echo $hero['home_page_name'];?></a>
             </div>
