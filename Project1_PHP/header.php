@@ -42,25 +42,21 @@
             
 
             <div class="nav-links">
-              <a class="active" href="hex.html">Home</a>
-              <a class="" href="index.html">Property Management</a>
+              <a class="active" href="hex.html"><?php echo $hero['home_page_name'];?></a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="hex.html">Home</a>
-              <a href="index.html">Property Managment</a>
+              <a href="hex.html"><?php echo $hero['home_page_name'];?></a>
             </div>
          </div> 
       </div>
       <a class="header-right-link" href="">
          <div class="header-right">
             <span class="text-book">
-               book
-               <br>
-               now
+            <?php echo $hero['header_button'];?>
             </span>
          </div>
       </a>
