@@ -53,10 +53,12 @@
             </div>
          </div> 
       </div>
-      <a class="header-right-link" href="">
+      <a class="header-right-link" href="tel:<?php echo $hero['button1_tel'];?>">
          <div class="header-right">
             <span class="text-book">
-            <?php echo $hero['header_button'];?>
+               book
+               <br>
+               now
             </span>
          </div>
       </a>
