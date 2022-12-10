@@ -43,7 +43,7 @@
                   </div>
                 </div>
             </div>
-            <a id="call-now-btn" href="tel:240-994-8325"><?php echo $hero['button2'];?></a>
+            <a id="call-now-btn" href="tel:<?php echo $hero['button1_tel'];?>"><?php echo $hero['button2'];?></a>
          </div>
      </section>
 

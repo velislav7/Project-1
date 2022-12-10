@@ -22,7 +22,7 @@
         <div class="text-slideshow">
             <span class="text-slideshow-sm"><?php echo $hero['small_title_slide2'];?></span>
             <span class="text-slideshow-xl"><?php echo $hero['main_title_slide2'];?></span>
-            <a href="tel:"><button class="btn" type="button"><?php echo $hero['button1'];?></button></a>
+            <a href="tel:<?php echo $hero['button1_tel'];?>"><button class="btn" type="button"><?php echo $hero['button1'];?></button></a>
          </div>
       </div>
    </div>
