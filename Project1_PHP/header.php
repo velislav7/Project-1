@@ -68,7 +68,7 @@
 
          <?php
          $image = get_field('feature_image');
-         $picture = $image['sizes']['large'];
+         $picture = $image['sizes']['wide'];
          ?>
         <img class="bg-image" src="<?php echo $picture;?>" style="width:100%">
         <div class="text-slideshow">   
@@ -82,7 +82,7 @@
       <div class="mySlides fade">
       <?php
          $image = get_field('feature_image2');
-         $picture = $image['sizes']['large'];
+         $picture = $image['sizes']['wide'];
          ?>
         <img class="bg-image" src="<?php echo $picture;?>" style="width:100%">
         <div class="text-slideshow">

@@ -26,6 +26,6 @@ function anaction_register_scripts()
 }
 add_action('wp_enqueue_scripts', 'anaction_register_scripts');
 
-
+add_image_size('wide', 1920, 1080, false );
 ?>
 
