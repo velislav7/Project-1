@@ -65,11 +65,10 @@
     </header>
     <div class="slideshow-container">
       <div class="mySlides fade">
-      <?php
-      $image = get_field('image1');
-      $picture = $image['sizes']['large'];
-      ?>
-        <img class="bg-image" src="<?php echo $picture['url'];?>" style="width:100%">
+
+      <?php if( get_field('image') ): ?>
+      <img class="bg-image" src="<?php the_field('image'); ?>" />
+      <?php endif; ?>
         <div class="text-slideshow">   
            <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
            <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
