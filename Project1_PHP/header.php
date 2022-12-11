@@ -42,14 +42,14 @@
             
             <?php $hero = get_field('hero');?>
             <div class="nav-links">
-              <a class="active" href="hex.html"><?php echo $hero['home_page_name'];?></a>
+              <a class="active" href="index.html"><?php echo $hero['home_page_name'];?></a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="hex.html"><?php echo $hero['home_page_name'];?></a>
+              <a href="index.html"><?php echo $hero['home_page_name'];?></a>
             </div>
          </div> 
       </div>
@@ -63,3 +63,23 @@
          </div>
       </a>
     </header>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img class="bg-image" src="<?php echo $hero['image1'];?>" style="width:100%">
+        <div class="text-slideshow">   
+           <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
+           <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
+           
+           <a href="tel:<?php echo $hero['button1_tel'];?>"><button class="btn" type="button"><?php echo $hero['button1'];?></button></a>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img class="bg-image" src="<?php echo $hero['image1'];?>" style="width:100%">
+        <div class="text-slideshow">
+            <span class="text-slideshow-sm"><?php echo $hero['small_title_slide2'];?></span>
+            <span class="text-slideshow-xl"><?php echo $hero['main_title_slide2'];?></span>
+            <a href="tel:<?php echo $hero['button1_tel'];?>"><button class="btn" type="button"><?php echo $hero['button1'];?></button></a>
+         </div>
+      </div>
+   </div>
