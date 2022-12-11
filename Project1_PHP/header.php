@@ -66,9 +66,11 @@
     <div class="slideshow-container">
       <div class="mySlides fade">
 
-      <?php if( get_field('image') ): ?>
-      <img class="bg-image" src="<?php the_field('image'); ?>" />
-      <?php endif; ?>
+         <?php
+         $image = get_field('feature_image');
+         $picture = $image['sizes']['large'];
+         ?>
+        <img class="bg-image" src="" style="width:100%">
         <div class="text-slideshow">   
            <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
            <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
@@ -78,7 +80,7 @@
       </div>
       
       <div class="mySlides fade">
-        <img class="bg-image" src="" style="width:100%">
+        <img class="bg-image" src="<?php echo $picture;?>" style="width:100%">
         <div class="text-slideshow">
             <span class="text-slideshow-sm"><?php echo $hero['small_title_slide2'];?></span>
             <span class="text-slideshow-xl"><?php echo $hero['main_title_slide2'];?></span>
