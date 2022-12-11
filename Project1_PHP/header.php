@@ -70,7 +70,7 @@
          $image = get_field('feature_image');
          $picture = $image['sizes']['wide'];
          ?>
-        <img class="bg-image" src="<?php echo $picture;?>" style="width:100%">
+        <img class="bg-image" src="<?php echo $picture;?>">
         <div class="text-slideshow">   
            <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
            <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
@@ -82,9 +82,9 @@
       <div class="mySlides fade">
       <?php
          $image = get_field('feature_image2');
-         $picture = $image['sizes']['wide'];
+         $picture = $image['sizes']['small'];
          ?>
-        <img class="bg-image" src="<?php echo $picture;?>" style="width:100%">
+        <img class="bg-image" src="<?php echo $picture;?>">
         <div class="text-slideshow">
             <span class="text-slideshow-sm"><?php echo $hero['small_title_slide2'];?></span>
             <span class="text-slideshow-xl"><?php echo $hero['main_title_slide2'];?></span>
