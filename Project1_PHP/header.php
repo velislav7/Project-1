@@ -69,7 +69,7 @@
       $image = get_field('image1');
       $picture = $image['sizes']['large'];
       ?>
-        <img class="bg-image" src="<?php echo $picture;?>" style="width:100%">
+        <img class="bg-image" src="<?php echo $picture['url'];?>" style="width:100%">
         <div class="text-slideshow">   
            <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
            <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
