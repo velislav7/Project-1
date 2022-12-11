@@ -42,14 +42,14 @@
             
             <?php $hero = get_field('hero');?>
             <div class="nav-links">
-              <a class="active" href="index.html"><?php echo $hero['home_page_name'];?></a>
+              <a class="active" href="index.php"><?php echo $hero['home_page_name'];?></a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="index.html"><?php echo $hero['home_page_name'];?></a>
+              <a href="index.php"><?php echo $hero['home_page_name'];?></a>
             </div>
          </div> 
       </div>
