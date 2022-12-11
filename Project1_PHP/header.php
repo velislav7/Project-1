@@ -82,7 +82,7 @@
       <div class="mySlides fade">
       <?php
          $image = get_field('feature_image2');
-         $picture = $image['sizes']['small'];
+         $picture = $image['sizes']['normal'];
          ?>
         <img class="bg-image" src="<?php echo $picture;?>">
         <div class="text-slideshow">
