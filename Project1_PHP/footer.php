@@ -1,7 +1,12 @@
 <section class="ceo-section">
 <?php $footer = get_field('footer');?>
         <div class="bio-block">
-            <img id="ceo" src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/image.png">
+         
+        <?php
+         $image = get_field('feature_image3');
+         $picture = $image['sizes']['large'];
+         ?>
+            <img id="ceo" src="<?php echo $picture;?>">
             <h1 class="bio-block-headline"><?php echo $footer['ceo_name_box'];?></h1>
             <div class="bio-block-text">
                <div class="number"><?php echo $footer['number_box'];?></div>
