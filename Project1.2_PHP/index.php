@@ -18,7 +18,7 @@ get_header();
          </div>
       </div>
       <div class="second-grid">
-         <h1 class="title title-grid"><?php echo get_theme_mod('pm-index-contact-main-headline') ?><br></h1>
+         <h1 class="title title-grid"><?php echo get_theme_mod('pm-index-email') ?><br></h1>
          <div class="text-box">
             <h1 class="headline-rentals">Short Term Rentals (Under 30 Day Leases)</h1> 
             <ul class="text-rentals">

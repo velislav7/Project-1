@@ -104,17 +104,17 @@ function pm_index($wp_customize) {
       'title' => 'Body'
    ));
 
-   // Main Headline
-   $wp_customize->add_setting('pm-index-main-headline', array(
-      'default' => 'Example Main Headline'
+   // Email
+   $wp_customize->add_setting('pm-index-email', array(
+      'default' => 'Example e-mail'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-main-headline-control', array(
-      'label' => 'Main Headline',
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-email-control', array(
+      'label' => 'E-mail',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-main-headline'
+      'settings' => 'pm-index-email'
    )));
-    
+
 }
 
 add_action('customize_register', 'pm_index');
