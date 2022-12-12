@@ -22,7 +22,15 @@
 <body class = "home-page-template">
    <header class="page-header">
       <div class="header-left">
-         <img class="logo" alt src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/LogoFinalMMM_5.png">
+          <?php
+         if(function_exists('the_custom_logo')){
+
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $logo = wp_get_attachment_image_src($custom_logo_id);
+
+         }
+         ?>
+         <img class="logo" src="<?php echo $logo[0] ?>">
 
          <div class="nav">
             <input type="checkbox" id="nav-check">
