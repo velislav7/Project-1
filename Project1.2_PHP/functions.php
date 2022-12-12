@@ -104,15 +104,15 @@ function pm_index($wp_customize) {
       'title' => 'Body'
    ));
 
-   // Main Title
-   $wp_customize->add_setting('pm-index-main-title', array(
-      'default' => 'Example titel'
+   // Email
+   $wp_customize->add_setting('pm-index-title', array(
+      'default' => 'Example title'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-main-title-control', array(
-      'label' => 'Main Titel',
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-title-control', array(
+      'label' => 'E-mail',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-main-title'
+      'settings' => 'pm-index-title'
    )));
 
 }
