@@ -4,6 +4,8 @@ function anaction_theme_support(){
    //adds dynamic title tag support
    add_theme_support('title-tag');
    add_theme_support('custom-logo');
+   add_theme_support('page-title');
+
 }
 add_action('after_setup_theme', 'anaction_theme_support');
 
@@ -20,6 +22,23 @@ function anaction_register_styles()
 }
 add_action('wp_enqueue_scripts', 'anaction_register_styles');
 
+function pm_footer($wp_customize) {
+   $wp_customize->add_section('pm-footer-section', array(
+      'title' => 'Footer'
+   ));
+
+   $wp_customize->add_setting('pm-footer-headline', array(
+      'default' => 'Example Headline Tetx'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-headline-control', array(
+      'label' => 'Headline',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-headline'
+   )));
+}
+
+add_action('cutomize_register', 'pm_footer');
 
 ?>
 
