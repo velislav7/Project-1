@@ -82,6 +82,16 @@ function pm_footer($wp_customize) {
       'section' => 'pm-footer-section',
       'settings' => 'pm-footer-email'
    )));
+   
+   // Image
+   $wp_customize->add_setting('pm-footer-image', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-footer-image-control', array(
+      'label' => 'Image',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-image'
+   )));
 
  
 }
