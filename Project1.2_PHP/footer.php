@@ -1,5 +1,5 @@
 <div class="contact-us-block">
-      <h1 class="block-headline">Contact Us</h1>
+      <h1 class="block-headline"><?php echo get_theme_mod('pm-footer-headline') ?></h1>
          <div class="info">
             <h1 class="contact-headline">MMM Management, LLC</h1>
             <div id="adress" class="text">Ok 64. E Broadway Rd Suite 200, Tempe, AZ 85282</div>
