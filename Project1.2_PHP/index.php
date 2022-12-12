@@ -6,7 +6,7 @@ get_header();
       <div class="first-grid">
          <img class="title" src="https://images.unsplash.com/photo-1669808404829-015ec1ce3625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80">
          <div class="text-box">
-            <h1 class="headline-rentals">Long Term Rentals (Over 30 Day Leases)</h1>
+            <h1 class="headline-rentals"><?php echo get_theme_mod('pm-body-contact-main-headline') ?></h1>
             <ul class="text-rentals">
                <li>A-Z management on airbnb, vrbo, and other rental platforms</li>
                <li>Maintenance</li>

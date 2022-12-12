@@ -43,16 +43,14 @@
             </div>
             
             <div class="nav-links">
-              <a class="active" href="hex.html">Home</a>
-              <a class="" href="index.html">Property Management</a>
+              <a class="active" href="index.html">Home</a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="hex.html">Home</a>
-              <a href="index.html">Property Managment</a>
+              <a href="index.html">Home</a>
             </div>
          </div> 
       </div>
