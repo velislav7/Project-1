@@ -118,7 +118,7 @@ function pm_body($wp_customize) {
  
 }
 
-add_action('customize_register', 'pm_footer');
+add_action('customize_register', 'pm_body');
 
 ?>
 
