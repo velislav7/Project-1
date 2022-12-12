@@ -38,7 +38,7 @@ function pm_footer($wp_customize) {
    )));
 }
 
-add_action('cutomize_register', 'pm_footer');
+add_action('customize_register', 'pm_footer');
 
 ?>
 
