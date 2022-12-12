@@ -1,11 +1,11 @@
 <div class="contact-us-block">
       <h1 class="block-headline"><?php echo get_theme_mod('pm-footer-headline') ?></h1>
          <div class="info">
-            <h1 class="contact-headline">MMM Management, LLC</h1>
-            <div id="adress" class="text">Ok 64. E Broadway Rd Suite 200, Tempe, AZ 85282</div>
-            <a class="contact-link" href="tel:240-994-8325">240-994-8325</a></br>
-            <a class="contact-link" href="mailto:reed@mmminvestmentgroup.com">reed@mmminvestmentgroup.com</a></br>
-            <a href="tel:240-994-8325"><button class="call-us-btn">Call Us Now!</button></a>
+            <h1 class="contact-headline"><?php echo get_theme_mod('pm-footer-contact-headline') ?></h1>
+            <div id="adress" class="text"><?php echo get_theme_mod('pm-footer-text') ?></div>
+            <a class="contact-link" href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><?php echo get_theme_mod('pm-footer-number') ?></a></br>
+            <a class="contact-link" href="mailto:reed@mmminvestmentgroup.com"><?php echo get_theme_mod('pm-footer-email') ?></a></br>
+            <a href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><button class="call-us-btn">Call Us Now!</button></a>
          </div>
    </div>
 

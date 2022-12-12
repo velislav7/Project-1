@@ -27,6 +27,7 @@ function pm_footer($wp_customize) {
       'title' => 'Footer'
    ));
 
+   // Headline
    $wp_customize->add_setting('pm-footer-headline', array(
       'default' => 'Example Headline Tetx'
    ));
@@ -36,6 +37,53 @@ function pm_footer($wp_customize) {
       'section' => 'pm-footer-section',
       'settings' => 'pm-footer-headline'
    )));
+
+   // Contact Headline
+   $wp_customize->add_setting('pm-footer-contact-headline', array(
+      'default' => 'Example Contact Healine'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-contact-headline-control', array(
+      'label' => 'Contact Headline',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-contact-headline',
+   )));
+
+   // Adress
+   $wp_customize->add_setting('pm-footer-text', array(
+      'default' => 'Example Adress'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-text-control', array(
+      'label' => 'Adress',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-text',
+      'type' => 'textarea'
+   )));
+
+   // Number
+   $wp_customize->add_setting('pm-footer-number', array(
+      'default' => 'Example Number'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-number-control', array(
+      'label' => 'Number',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-number'
+   )));
+
+   // Email
+   $wp_customize->add_setting('pm-footer-email', array(
+      'default' => 'Example e-mail'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-email-control', array(
+      'label' => 'E-mail',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-email'
+   )));
+
+ 
 }
 
 add_action('customize_register', 'pm_footer');
