@@ -99,26 +99,25 @@ function pm_footer($wp_customize) {
 add_action('customize_register', 'pm_footer');
 
 
-function pm_body($wp_customize) {
-   $wp_customize->add_section('pm-body-section', array(
+function pm_index($wp_customize) {
+   $wp_customize->add_section('pm-index-section', array(
       'title' => 'Body'
    ));
 
    // Main Headline
-   $wp_customize->add_setting('pm-body-main-headline', array(
+   $wp_customize->add_setting('pm-index-main-headline', array(
       'default' => 'Example Main Headline'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-body-main-headline-control', array(
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-main-headline-control', array(
       'label' => 'Main Headline',
-      'section' => 'pm-body-section',
-      'settings' => 'pm-body-main-headline'
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-main-headline'
    )));
-
- 
+    
 }
 
-add_action('customize_register', 'pm_body');
+add_action('customize_register', 'pm_index');
 
 ?>
 
