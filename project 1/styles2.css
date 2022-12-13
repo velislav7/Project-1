@@ -95,6 +95,7 @@ html, body{
 
 }
 
+
 .title{
   max-width: 100%;
   margin: auto;
@@ -105,6 +106,11 @@ html, body{
   font-weight: 500;
 }
 
+.title-image{
+    max-width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
 
 .text-box{
   padding: 2em 3em;
