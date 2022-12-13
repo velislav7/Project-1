@@ -56,7 +56,6 @@ function pm_header($wp_customize) {
       'section' => 'pm-header-section',
       'settings' => 'pm-header-subtitle'
    )));
-
 }
 
 add_action('customize_register', 'pm_header');
