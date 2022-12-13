@@ -9,6 +9,13 @@ function anaction_theme_support(){
 add_action('after_setup_theme', 'anaction_theme_support');
 
 
+function images_setup(){
+   add_theme_support('post-thumbnails');
+   add_image_size('small-thumbnail', 180, 120, true);
+   add_image_size('banner-image', 1024, 1024, true);
+}
+add_action('after_setup_theme', 'images_setup_setup');
+
 
 
 function anaction_register_styles()
@@ -220,7 +227,7 @@ function pm_index($wp_customize) {
    $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-index-image-control', array(
       'label' => 'Image',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-image',
+      'settings' => 'pm-index-image'
    )));
 
 }

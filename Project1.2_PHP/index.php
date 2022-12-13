@@ -4,7 +4,7 @@ get_header();
 
 <div class="rentals">
       <div class="first-grid">
-         <img class="title-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image')) ?>" style="width: 100%; height: 100%; object-fit:cover;">
+         <img class="title-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image', 'banner-image')) ?>" style="width: 100%; height: 100%; object-fit:cover;">
          <div class="text-box">
             <h1 class="headline-rentals"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></h1>
             <ul class="text-rentals">
