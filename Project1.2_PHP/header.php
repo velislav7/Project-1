@@ -64,7 +64,7 @@
       </a>
     </header>
 
-    <div id="upper-page">
+    <section id="upper-page">
         <div id="image-block">
            <a id="number-link" href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><?php echo get_theme_mod('pm-footer-number') ?></a>
            <h1 id="headline"><?php echo get_theme_mod('pm-header-title') ?></h1>
@@ -80,5 +80,4 @@
             ?>
            <a href="#exactline"><button class="about-us-btn">ABOUT US</button></a>
         </div>
-    </div>
-   <div class="rentals">
+   </section>
