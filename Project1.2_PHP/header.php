@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Management</title>
    
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Vidaloka" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,9 +66,9 @@
 
     <div id="upper-page">
         <div id="image-block">
-           <a id="number-link" href="tel:240-994-8325">240-994-8325</a>
-           <h1 id="headline">MMM Property Management</h1>
-           <h4 id="subtitle">We offer property management for all Short Term & Long Term Rentals Properties!</h4>
+           <a id="number-link" href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><?php echo get_theme_mod('pm-footer-number') ?></a>
+           <h1 id="headline"><?php echo get_theme_mod('pm-header-title') ?></h1>
+           <h4 id="subtitle"><?php echo get_theme_mod('pm-header-subtitle') ?></h4>
            <a href=""><button class="about-us-btn">ABOUT US</button></a>
         </div>
     </div>

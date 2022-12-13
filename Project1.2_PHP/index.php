@@ -4,17 +4,7 @@ get_header();
 
 <div class="rentals">
       <div class="first-grid">
-      <?php
-         if(function_exists('post-thumbnails')){
-
-            $post_thumbnails_id = get_theme_mod('post-thumbnails');
-            $thumbnail = wp_get_attachment_image_src($post_thumbnails_id);
-
-         }
-         ?>
-         <img class="title-image" src="<?php echo $thumbnail[0] ?>">
-
-         <!-- <img class="title-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image')) ?>" style="width: 100%; height: 100%; object-fit:cover;"> -->
+         <img class="title-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image')) ?>" style="width: 100%; height: 100%; object-fit:cover;">
          <div class="text-box">
             <h1 class="headline-rentals"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></h1>
             <ul class="text-rentals">
@@ -24,7 +14,7 @@ get_header();
                <li><?php echo get_theme_mod('pm-index-paragraph-row4') ?></li>
 
             </ul>
-            <a href="<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns" >Find out more</button></a>
+            <a href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns" >Find out more</button></a>
          </div>
       </div>
       <div class="second-grid">
@@ -38,7 +28,7 @@ get_header();
                <li><?php echo get_theme_mod('pm-index-paragraph-row8') ?></li>
 
             </ul>
-            <a href="<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns">CONTACT US</button></a>
+            <a href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns">CONTACT US</button></a>
          </div>
    </div>
    <div class="grid-wrapper">

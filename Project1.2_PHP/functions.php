@@ -5,7 +5,7 @@ function anaction_theme_support(){
    add_theme_support('title-tag');
    add_theme_support('custom-logo');
    add_theme_support('page-title');
-   
+
 }
 add_action('after_setup_theme', 'anaction_theme_support');
 
@@ -30,81 +30,37 @@ function anaction_register_styles()
 }
 add_action('wp_enqueue_scripts', 'anaction_register_styles');
 
-function pm_footer($wp_customize) {
-   $wp_customize->add_section('pm-footer-section', array(
-      'title' => 'Footer'
+function pm_header($wp_customize) {
+   $wp_customize->add_section('pm-header-section', array(
+      'title' => 'Header'
    ));
 
-   // Headline
-   $wp_customize->add_setting('pm-footer-headline', array(
-      'default' => 'Example Headline Tetx'
+   // Title
+   $wp_customize->add_setting('pm-header-title', array(
+      'default' => 'Example Title'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-headline-control', array(
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-header-title-control', array(
       'label' => 'Headline',
-      'section' => 'pm-footer-section',
-      'settings' => 'pm-footer-headline'
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-title'
    )));
 
-   // Contact Headline
-   $wp_customize->add_setting('pm-footer-contact-headline', array(
-      'default' => 'Example Contact Healine'
+   // Subtitle
+   $wp_customize->add_setting('pm-header-subtitle', array(
+      'default' => 'Example Subtitle'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-contact-headline-control', array(
-      'label' => 'Contact Headline',
-      'section' => 'pm-footer-section',
-      'settings' => 'pm-footer-contact-headline',
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-header-subtitle-control', array(
+      'label' => 'Headline',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-subtitle'
    )));
 
-   // Adress
-   $wp_customize->add_setting('pm-footer-text', array(
-      'default' => 'Example Adress'
-   ));
-
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-text-control', array(
-      'label' => 'Adress',
-      'section' => 'pm-footer-section',
-      'settings' => 'pm-footer-text',
-      'type' => 'textarea'
-   )));
-
-   // Number
-   $wp_customize->add_setting('pm-footer-number', array(
-      'default' => 'Example Number'
-   ));
-
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-number-control', array(
-      'label' => 'Number',
-      'section' => 'pm-footer-section',
-      'settings' => 'pm-footer-number'
-   )));
-
-   // Email
-   $wp_customize->add_setting('pm-footer-email', array(
-      'default' => 'Example e-mail'
-   ));
-
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-email-control', array(
-      'label' => 'E-mail',
-      'section' => 'pm-footer-section',
-      'settings' => 'pm-footer-email'
-   )));
-   
-   // Image
-   $wp_customize->add_setting('pm-footer-image', array(
-   ));
-
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-footer-image-control', array(
-      'label' => 'Image',
-      'section' => 'pm-footer-section',
-      'settings' => 'pm-footer-image'
-   )));
-
- 
 }
 
-add_action('customize_register', 'pm_footer');
+add_action('customize_register', 'pm_header');
+
 
 
 function pm_index($wp_customize) {
@@ -222,11 +178,97 @@ function pm_index($wp_customize) {
    ));
 
    // Image
+   $wp_customize->add_setting('pm-index-image', array(
+   ));
 
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-index-image-control', array(
+      'label' => 'Image',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-image'
+   )));
 
 }
 
 add_action('customize_register', 'pm_index');
+
+
+function pm_footer($wp_customize) {
+   $wp_customize->add_section('pm-footer-section', array(
+      'title' => 'Footer'
+   ));
+
+   // Headline
+   $wp_customize->add_setting('pm-footer-headline', array(
+      'default' => 'Example Headline Tetx'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-headline-control', array(
+      'label' => 'Headline',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-headline'
+   )));
+
+   // Contact Headline
+   $wp_customize->add_setting('pm-footer-contact-headline', array(
+      'default' => 'Example Contact Healine'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-contact-headline-control', array(
+      'label' => 'Contact Headline',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-contact-headline',
+   )));
+
+   // Adress
+   $wp_customize->add_setting('pm-footer-text', array(
+      'default' => 'Example Adress'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-text-control', array(
+      'label' => 'Adress',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-text',
+      'type' => 'textarea'
+   )));
+
+   // Number
+   $wp_customize->add_setting('pm-footer-number', array(
+      'default' => 'Example Number'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-number-control', array(
+      'label' => 'Number',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-number'
+   )));
+
+   // Email
+   $wp_customize->add_setting('pm-footer-email', array(
+      'default' => 'Example e-mail'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-email-control', array(
+      'label' => 'E-mail',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-email'
+   )));
+   
+   // Image
+   $wp_customize->add_setting('pm-footer-image', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-footer-image-control', array(
+      'label' => 'Image',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-image'
+   )));
+
+ 
+}
+
+add_action('customize_register', 'pm_footer');
+
+
 
 
 ?>
