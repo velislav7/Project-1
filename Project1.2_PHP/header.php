@@ -42,14 +42,14 @@
             </div>
             
             <div class="nav-links">
-              <a class="active" href="index.html">Home</a>
+              <a class="active" href="index.php">Home</a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="index.html">Home</a>
+              <a href="index.php">Home</a>
             </div>
          </div> 
       </div>
@@ -78,7 +78,7 @@
                   <?
                }
             ?>
-           <a href="index.html#exactline"><button class="about-us-btn">ABOUT US</button></a>
+           <a href="index.php#exactline"><button class="about-us-btn">ABOUT US</button></a>
         </div>
     </div>
    <div class="rentals">
