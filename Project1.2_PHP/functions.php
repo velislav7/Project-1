@@ -5,6 +5,7 @@ function anaction_theme_support(){
    add_theme_support('title-tag');
    add_theme_support('custom-logo');
    add_theme_support('page-title');
+   
 }
 add_action('after_setup_theme', 'anaction_theme_support');
 
@@ -221,14 +222,7 @@ function pm_index($wp_customize) {
    ));
 
    // Image
-   $wp_customize->add_setting('pm-index-image', array(
-   ));
 
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-index-image-control', array(
-      'label' => 'Image',
-      'section' => 'pm-index-section',
-      'settings' => 'pm-index-image'
-   )));
 
 }
 
