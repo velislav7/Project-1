@@ -69,7 +69,16 @@
            <a id="number-link" href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><?php echo get_theme_mod('pm-footer-number') ?></a>
            <h1 id="headline"><?php echo get_theme_mod('pm-header-title') ?></h1>
            <h4 id="subtitle"><?php echo get_theme_mod('pm-header-subtitle') ?></h4>
-           <a href=""><button class="about-us-btn">ABOUT US</button></a>
+           <?php
+               if(isset($_GET['scrollX']) && isset($_GET['scrollY'])){
+                  ?>
+                     <script type="text/javascript">
+                        window.scrollTo(<?= $_GET['scrollX'];?>, <?=$_GET['scrollY'];?>);
+                     </script>
+                  <?
+               }
+            ?>
+           <a href="index.html#exactline"><button class="about-us-btn">ABOUT US</button></a>
         </div>
     </div>
    <div class="rentals">

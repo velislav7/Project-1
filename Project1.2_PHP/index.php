@@ -6,7 +6,7 @@ get_header();
       <div class="first-grid">
          <img class="title-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image')) ?>" style="width: 100%; height: 100%; object-fit:cover;">
          <div class="text-box">
-            <h1 class="headline-rentals"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></h1>
+            <h1 class="headline-rentals"><a name="exactline"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></a></h1>
             <ul class="text-rentals">
                <li><?php echo get_theme_mod('pm-index-paragraph-row1') ?></li>
                <li><?php echo get_theme_mod('pm-index-paragraph-row2') ?></li>
@@ -30,7 +30,7 @@ get_header();
             </ul>
             <a href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns">CONTACT US</button></a>
          </div>
-   </div>
+</div>
    <div class="grid-wrapper">
       <div class="tall">
          <img src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="" />
