@@ -110,14 +110,123 @@ function pm_index($wp_customize) {
    ));
 
    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-main-headline-control', array(
-      'label' => 'E-mail',
+      'label' => 'Headline',
       'section' => 'pm-index-section',
       'settings' => 'pm-index-main-headline'
+   )));
+
+   // First Paragraph Headline
+   $wp_customize->add_setting('pm-index-paragraph1-headline', array(
+      'default' => 'Example Paragraph Headline'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph1-headline-control', array(
+      'label' => 'Paragraph Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph1-headline'
+   )));
+
+   // Second Paragraph Headline
+   $wp_customize->add_setting('pm-index-paragraph2-headline', array(
+      'default' => 'Example Paragraph Headline'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph2-headline-control', array(
+      'label' => 'Paragraph Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph2-headline'
+   )));
+
+   // Paragraph1 Text
+   $wp_customize->add_setting('pm-index-paragraph-row1', array(
+      'default' => 'Example Paragraph Text'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row1-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row1'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row2', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row2-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row2'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row3', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row3-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row3'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row4', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row4-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row4'
+   )));
+   
+
+   // Paragraph2 Text
+   $wp_customize->add_setting('pm-index-paragraph-row5', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row5-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row5'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row6', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row6-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row6'
+   )));
+   
+   $wp_customize->add_setting('pm-index-paragraph-row7', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row7-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row7'
+   )));
+   
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row8-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row8'
+   )));
+   $wp_customize->add_setting('pm-index-paragraph-row8', array(
+      'default' => 'Example Paragraph Text'
+   ));
+
+   // Image
+   $wp_customize->add_setting('pm-index-image', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-index-image-control', array(
+      'label' => 'Image',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-image'
    )));
 
 }
 
 add_action('customize_register', 'pm_index');
+
 
 ?>
 

@@ -4,30 +4,31 @@ get_header();
 
 <div class="rentals">
       <div class="first-grid">
-         <img class="title" src="https://images.unsplash.com/photo-1669808404829-015ec1ce3625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80">
+         <img class="title" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image')) ?>">
          <div class="text-box">
-            <h1 class="headline-rentals">Long Term Rentals (Over 30 Day Leases)</h1>
+            <h1 class="headline-rentals"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></h1>
             <ul class="text-rentals">
-               <li>A-Z management on airbnb, vrbo, and other rental platforms</li>
-               <li>Maintenance</li>
-               <li>Cleanings before and after guest stays</li>
-               <li>Checking in and out guests</li>
-               <li>Managing short term rental platform, messages, calls with guests</li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row1') ?></li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row2') ?></li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row3') ?></li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row4') ?></li>
+
             </ul>
-            <a target="_blank" href=""><button class="descr-btn" class="rental-btns" >Find out more</button></a>
+            <a href="<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns" >Find out more</button></a>
          </div>
       </div>
       <div class="second-grid">
          <h1 class="title title-grid"><?php echo get_theme_mod('pm-index-main-headline') ?><br></h1>
          <div class="text-box">
-            <h1 class="headline-rentals">Short Term Rentals (Under 30 Day Leases)</h1> 
+            <h1 class="headline-rentals"><?php echo get_theme_mod('pm-index-paragraph2-headline') ?></h1> 
             <ul class="text-rentals">
-               <li>Making sure rent is paid on time</li>
-               <li>Scheduled cleanings & maintenance</li>
-               <li>Scheduled inspections</li>
-               <li>Overall management</li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row5') ?></li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row6') ?></li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row7') ?></li>
+               <li><?php echo get_theme_mod('pm-index-paragraph-row8') ?></li>
+
             </ul>
-            <a target="_blank" href=""><button class="descr-btn" class="rental-btns">CONTACT US</button></a>
+            <a href="<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns">CONTACT US</button></a>
          </div>
    </div>
    <div class="grid-wrapper">
