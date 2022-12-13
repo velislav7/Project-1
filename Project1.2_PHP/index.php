@@ -3,10 +3,10 @@ get_header();
 ?>
 
 <div class="rentals">
-      <div class="first-grid">
+      <div class="first-grid"><a name="exactline">
          <img class="title-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-index-image')) ?>" style="width: 100%; height: 100%; object-fit:cover;">
          <div class="text-box">
-            <h1 class="headline-rentals"><a name="exactline"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></a></h1>
+            <h1 class="headline-rentals"><?php echo get_theme_mod('pm-index-paragraph1-headline') ?></h1>
             <ul class="text-rentals">
                <li><?php echo get_theme_mod('pm-index-paragraph-row1') ?></li>
                <li><?php echo get_theme_mod('pm-index-paragraph-row2') ?></li>
@@ -16,7 +16,7 @@ get_header();
             </ul>
             <a href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><button class="descr-btn" class="rental-btns" >Find out more</button></a>
          </div>
-      </div>
+      </a></div>
       <div class="second-grid">
          <h1 class="title title-grid"><?php echo get_theme_mod('pm-index-main-headline') ?><br></h1>
          <div class="text-box">

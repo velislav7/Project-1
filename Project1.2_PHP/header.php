@@ -53,7 +53,7 @@
             </div>
          </div> 
       </div>
-      <a class="header-right-link" href="">
+      <a class="header-right-link" href="tel:<?php echo get_theme_mod('pm-footer-number') ?>">
          <div class="header-right">
             <span class="text-book">
                book
