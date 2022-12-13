@@ -78,7 +78,7 @@
                   <?
                }
             ?>
-           <a href="index.php#exactline"><button class="about-us-btn">ABOUT US</button></a>
+           <a href="#exactline"><button class="about-us-btn">ABOUT US</button></a>
         </div>
     </div>
    <div class="rentals">
