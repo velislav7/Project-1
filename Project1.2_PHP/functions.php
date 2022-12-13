@@ -221,8 +221,6 @@ function pm_index($wp_customize) {
       'label' => 'Image',
       'section' => 'pm-index-section',
       'settings' => 'pm-index-image',
-      'width' => 1024,
-      'height' => 1024,
    )));
 
 }
