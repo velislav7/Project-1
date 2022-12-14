@@ -1,47 +1,47 @@
 <section class="ceo-section">
         <div class="bio-block">
-            <img id="ceo" src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/image.png">
-            <h1 class="bio-block-headline">Fareed Abedini</h1>
+            <img id="ceo" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-footer-image')) ?>">
+            <h1 class="bio-block-headline"><?php echo get_theme_mod('pm-footer-headline') ?></h1>
             <div class="bio-block-text">
-               <div class="number">240-994-8325</div>
-               <div class="e-mail">reed@mmminvestmentgroup.com</div>
+               <div class="number"><?php echo get_theme_mod('pm-header-number') ?></div>
+               <div class="e-mail"><?php echo get_theme_mod('pm-footer-email') ?></div>
             </div>
         </div>
         <div class="text-block">
             <div>
-               <h1 class="name">Fareed Abedini</h1>
-               <h2 class="position">CEO / Founder</h2>
+               <h1 class="name"><?php echo get_theme_mod('pm-footer-headline') ?></h1>
+               <h2 class="position"><?php echo get_theme_mod('pm-footer-position') ?></h2>
             </div>
             <div class="dropdowns-component">
                <div class="dropdown">
                   <div class="drop-btn">
                      <span id="dr-i-1" class="drop-icon">-</span>
-                     <button onclick="Reveal1()" class="dropdown-header">Young & Brave</button>
+                     <button onclick="Reveal1()" class="dropdown-header"><?php echo get_theme_mod('pm-footer-pheadline1') ?></button>
                   </div>
                   <div id="dropdown-text-1" class="dropdown-text dr-t">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam quibusdam quasi cum necessitatibus reiciendis officia veritatis repellat porro et?</p>
+                    <p><?php echo get_theme_mod('pm-footer-ptext1') ?></p>
                   </div>
                 </div>
                <div class="dropdown">
                   <div class="drop-btn">
                      <span id="dr-i-2" class="drop-icon">-</span>
-                     <button onclick="Reveal2()" class="dropdown-header">Young & Brave</button>
+                     <button onclick="Reveal2()" class="dropdown-header"><?php echo get_theme_mod('pm-footer-pheadline2') ?></button>
                   </div>
                   <div id="dropdown-text-2" class="dropdown-text dr-t">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam quibusdam quasi cum necessitatibus reiciendis officia veritatis repellat porro et?</p>
+                    <p><?php echo get_theme_mod('pm-footer-ptext2') ?></p>
                   </div>
                 </div>
                <div class="dropdown">
                   <div class="drop-btn">
                      <span id="dr-i-3" class="drop-icon">-</span>
-                     <button onclick="Reveal3()" class="dropdown-header">Young & Brave</button>
+                     <button onclick="Reveal3()" class="dropdown-header"><?php echo get_theme_mod('pm-footer-pheadline3') ?></button>
                   </div>                  
                   <div id="dropdown-text-3" class="dropdown-text dr-t">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam quibusdam quasi cum necessitatibus reiciendis officia veritatis repellat porro et?</p>
+                    <p><?php echo get_theme_mod('pm-footer-ptext3') ?></p>
                   </div>
                 </div>
             </div>
-            <a id="call-now-btn" href="tel:240-994-8325">CALL NOW</a>
+            <a id="call-now-btn" href="tel:<?php echo get_theme_mod('pm-header-number') ?>">CALL NOW</a>
          </div>
      </section>
 
