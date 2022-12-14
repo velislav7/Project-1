@@ -15,12 +15,10 @@
     wp_head(); 
     ?>
 
-</head>
 <body class = "home-page-template">
    <header class="page-header">
       <div class="header-left">
-         <!-- CUSTOM LOGO -->
-         <?php
+          <?php
          if(function_exists('the_custom_logo')){
 
             $custom_logo_id = get_theme_mod('custom_logo');
@@ -39,21 +37,22 @@
                 <span></span>
               </label>
             </div>
-            
-            <?php $hero = get_field('hero');?>
+
+       
+
             <div class="nav-links">
-              <a class="active" href="index.php"><?php echo $hero['home_page_name'];?></a>
+              <a class="active" href="/">Home</a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="index.php"><?php echo $hero['home_page_name'];?></a>
+              <a href="/">Home</a>
             </div>
          </div> 
       </div>
-      <a class="header-right-link" href="tel:<?php echo $hero['button1_tel'];?>">
+      <a class="header-right-link" href="tel:<?php echo get_theme_mod('pm-header-number') ?>">
          <div class="header-right">
             <span class="text-book">
                book
@@ -63,32 +62,23 @@
          </div>
       </a>
     </header>
-    <div class="slideshow-container">
+    
+   <div class="slideshow-container">
       <div class="mySlides fade">
-
-         <?php
-         $image = get_field('feature_image');
-         $picture = $image['sizes']['large'];
-         ?>
-        <img class="bg-image" src="<?php echo $picture;?>" style="object-fit:cover;width:100%;height:500px;">
-        <div class="text-slideshow">   
-           <span class="text-slideshow-sm"><?php echo $hero['small_title_slide1'];?></span>
-           <span class="text-slideshow-xl"><?php echo $hero['main_title_slide1'];?></span>
-           
-           <a href="tel:<?php echo $hero['button1_tel'];?>"><button class="btn" type="button"><?php echo $hero['button1'];?></button></a>
+        <img class="bg-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-header-image1')) ?>" style="object-fit:cover;width:100%;height:500px;">
+        <div class="text-slideshow">
+           <span class="text-slideshow-sm"><?php echo get_theme_mod('pm-header-subtitle1') ?></span>
+           <span class="text-slideshow-xl"><?php echo get_theme_mod('pm-header-title') ?></span>
+           <a href="tel:<?php echo get_theme_mod('pm-header-number') ?>"><button class="btn" type="button">get cash offer now</button></a>
         </div>
       </div>
       
       <div class="mySlides fade">
-      <?php
-         $image = get_field('feature_image2');
-         $picture = $image['sizes']['large'];
-         ?>
-        <img class="bg-image" src="<?php echo $picture;?>" style="object-fit:cover;width:100%;height:500px;">
+        <img class="bg-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-header-image2')) ?>" style="object-fit:cover;width:100%;height:500px;">
         <div class="text-slideshow">
-            <span class="text-slideshow-sm"><?php echo $hero['small_title_slide2'];?></span>
-            <span class="text-slideshow-xl"><?php echo $hero['main_title_slide2'];?></span>
-            <a href="tel:<?php echo $hero['button1_tel'];?>"><button class="btn" type="button"><?php echo $hero['button1'];?></button></a>
+            <span class="text-slideshow-sm"><?php echo get_theme_mod('pm-header-subtitle2') ?></span>
+            <span class="text-slideshow-xl"><?php echo get_theme_mod('pm-header-title') ?></span>
+            <a href="tel:<?php echo get_theme_mod('pm-header-number') ?>"><button class="btn" type="button">get cash offer now</button></a>
          </div>
       </div>
    </div>

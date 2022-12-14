@@ -27,5 +27,285 @@ function anaction_register_scripts()
 add_action('wp_enqueue_scripts', 'anaction_register_scripts');
 
 
+
+function pm_header($wp_customize) {
+   $wp_customize->add_section('pm-header-section', array(
+      'title' => 'Header'
+   ));
+
+   // Title
+   $wp_customize->add_setting('pm-header-title', array(
+      'default' => 'NO-OBLIGATION CASH OFFERS'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-header-title-control', array(
+      'label' => 'Slideshow Title',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-title'
+   )));
+
+   // Subtitle1
+   $wp_customize->add_setting('pm-header-subtitle1', array(
+      'default' => 'LIGHTNING FAST'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-header-subtitle1-control', array(
+      'label' => 'Slideshow Subitle 1',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-subtitle1'
+   )));
+
+   // Subtitle2
+   $wp_customize->add_setting('pm-header-subtitle2', array(
+      'default' => 'WE SPECIALIZE IN BUYING HOMES FOR A FAIR, CASH PRICE – QUICKLY AND EASILY.'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-header-subtitle2-control', array(
+      'label' => 'Slideshow Subitle 2',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-subtitle2'
+   )));
+
+   // Number
+   $wp_customize->add_setting('pm-header-number', array(
+      'default' => 'Example Number'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-header-number-control', array(
+      'label' => 'Number',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-number'
+   )));
+
+   // Image1
+   $wp_customize->add_setting('pm-header-image1', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-header-image1-control', array(
+      'label' => 'Slideshow Image 1',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-image1'
+   )));
+
+   // Image2
+   $wp_customize->add_setting('pm-header-image2', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-header-image2-control', array(
+      'label' => 'Slideshow Image 2',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-image2'
+   )));
+}
+
+add_action('customize_register', 'pm_header');
+
+
+function pm_index($wp_customize) {
+   $wp_customize->add_section('pm-index-section', array(
+      'title' => 'Body'
+   ));
+
+   // Main Headline
+   $wp_customize->add_setting('pm-index-main-headline', array(
+      'default' => 'Example Headline'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-main-headline-control', array(
+      'label' => 'Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-main-headline'
+   )));
+
+   // First Paragraph Headline
+   $wp_customize->add_setting('pm-index-paragraph1-headline', array(
+      'default' => 'Example Paragraph Headline'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph1-headline-control', array(
+      'label' => 'Paragraph Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph1-headline'
+   )));
+
+   // Second Paragraph Headline
+   $wp_customize->add_setting('pm-index-paragraph2-headline', array(
+      'default' => 'Example Paragraph Headline'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph2-headline-control', array(
+      'label' => 'Paragraph Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph2-headline'
+   )));
+
+   // Paragraph1 Text
+   $wp_customize->add_setting('pm-index-paragraph-row1', array(
+      'default' => 'Example Paragraph Text'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row1-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row1'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row2', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row2-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row2'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row3', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row3-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row3'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row4', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row4-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row4'
+   )));
+   
+
+   // Paragraph2 Text
+   $wp_customize->add_setting('pm-index-paragraph-row5', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row5-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row5'
+   )));
+
+   $wp_customize->add_setting('pm-index-paragraph-row6', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row6-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row6'
+   )));
+   
+   $wp_customize->add_setting('pm-index-paragraph-row7', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row7-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row7'
+   )));
+   
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row8-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row8'
+   )));
+   $wp_customize->add_setting('pm-index-paragraph-row8', array(
+      'default' => 'Example Paragraph Text'
+   ));
+
+   // Image
+   $wp_customize->add_setting('pm-index-image', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-index-image-control', array(
+      'label' => 'Image',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-image'
+   )));
+
+}
+
+add_action('customize_register', 'pm_index');
+
+
+function pm_footer($wp_customize) {
+   $wp_customize->add_section('pm-footer-section', array(
+      'title' => 'Footer'
+   ));
+
+   // Headline
+   $wp_customize->add_setting('pm-footer-headline', array(
+      'default' => 'Example Headline Tetx'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-headline-control', array(
+      'label' => 'Headline',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-headline'
+   )));
+
+   // Contact Headline
+   $wp_customize->add_setting('pm-footer-contact-headline', array(
+      'default' => 'Example Contact Healine'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-contact-headline-control', array(
+      'label' => 'Contact Headline',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-contact-headline',
+   )));
+
+   // Adress
+   $wp_customize->add_setting('pm-footer-text', array(
+      'default' => 'Example Adress'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-text-control', array(
+      'label' => 'Adress',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-text',
+      'type' => 'textarea'
+   )));
+
+   // Number
+   $wp_customize->add_setting('pm-footer-number', array(
+      'default' => 'Example Number'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-number-control', array(
+      'label' => 'Number',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-number'
+   )));
+
+   // Email
+   $wp_customize->add_setting('pm-footer-email', array(
+      'default' => 'Example e-mail'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-footer-email-control', array(
+      'label' => 'E-mail',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-email'
+   )));
+   
+   // Image
+   $wp_customize->add_setting('pm-footer-image', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-footer-image-control', array(
+      'label' => 'Image',
+      'section' => 'pm-footer-section',
+      'settings' => 'pm-footer-image'
+   )));
+
+ 
+}
+
+add_action('customize_register', 'pm_footer');
+
+
 ?>
 

@@ -61,7 +61,6 @@ function pm_header($wp_customize) {
 add_action('customize_register', 'pm_header');
 
 
-
 function pm_index($wp_customize) {
    $wp_customize->add_section('pm-index-section', array(
       'title' => 'Body'
