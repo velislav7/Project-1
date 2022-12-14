@@ -65,6 +65,14 @@
     </header>
 
     <section id="upper-page">
+            <style>  
+               section
+            {  
+               background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo wp_get_attachment_url(get_theme_mod('pm-footer-image')) ?>");
+               background-repeat: no-repeat;
+               background-size: cover;  
+            }  
+            </style> 
         <div id="image-block">
            <a id="number-link" href="tel:<?php echo get_theme_mod('pm-footer-number') ?>"><?php echo get_theme_mod('pm-footer-number') ?></a>
            <h1 id="headline"><?php echo get_theme_mod('pm-header-title') ?></h1>
