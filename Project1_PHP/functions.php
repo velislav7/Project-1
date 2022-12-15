@@ -303,11 +303,13 @@ add_action('customize_register', 'pm_footer');
 
 
 
-add_action( 'afte_setup_theme', 'my_custom_sizes_setup' );
+
 function my_custom_sizes_setup() {
    add_image_size( 'custom-size1', 1024, 1024, true);
    add_image_size( 'custom-size2', 620, 280, false);
 }
+
+add_action( 'after_setup_theme', 'my_custom_sizes_setup' );
 
 function wpdocs_setup_theme() {
 	add_theme_support( 'post-thumbnails' );
