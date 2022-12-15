@@ -302,12 +302,13 @@ function pm_footer($wp_customize) {
 add_action('customize_register', 'pm_footer');
 
 
-add_action( 'afte_setup_theme', 'my_custom_sizes' );
+
 
 function my_custom_sizes() {
-   add_image_size( 'custom-size', 1024, 1024, true);
+   add_image_size( 'custom-size1', 1024, 1024, true);
    add_image_size( 'custom-size2', 620, 280, false);
 }
+add_action( 'afte_setup_theme', 'my_custom_sizes' );
 
 ?>
 
