@@ -72,11 +72,12 @@
     <?php 
       if ( has_post_thumbnail() ) {
       the_post_thumbnail( 'custom-size1' );
+      $image = wp_get_attachment_url(get_theme_mod('pm-header-image1'));
    }
     ?>
    <div class="slideshow-container">
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-header-image1')) ?>" style="object-fit:cover;width:100%;height:500px;">
+        <img class="bg-image" src="<?php echo $image['sizes']['custom-size2'];?>" style="object-fit:cover;width:100%;height:500px;">
         <div class="text-slideshow">
            <span class="text-slideshow-sm"><?php echo get_theme_mod('pm-header-subtitle1') ?></span>
            <span class="text-slideshow-xl"><?php echo get_theme_mod('pm-header-title') ?></span>
@@ -85,7 +86,7 @@
       </div>
       
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-header-image2')) ?>" style="object-fit:cover;width:100%;height:500px;">
+        <img class="bg-image" src="<?php echo $image['sizes']['custom-size2'];?>" style="object-fit:cover;width:100%;height:500px;">
         <div class="text-slideshow">
             <span class="text-slideshow-sm"><?php echo get_theme_mod('pm-header-subtitle2') ?></span>
             <span class="text-slideshow-xl"><?php echo get_theme_mod('pm-header-title') ?></span>
