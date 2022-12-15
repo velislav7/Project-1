@@ -15,7 +15,7 @@ function images_setup(){
    add_image_size('small-thumbnail', 180, 120, true);
    add_image_size('banner-image', 1024, 1024, true);
 }
-add_action('after_setup_theme', 'images_setup_setup');
+add_action('after_setup_theme', 'images_setup');
 
 
 
