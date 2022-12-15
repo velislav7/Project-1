@@ -301,6 +301,16 @@ function pm_footer($wp_customize) {
 
 add_action('customize_register', 'pm_footer');
 
+add_image_size( 'custom-size', 1024, 1024, $crop = false );
+if ( has_post_thumbnail() ) {
+	the_post_thumbnail( 'custom-size' );
+}
+global $_wp_additional_image_sizes;
+
+	$_wp_additional_image_sizes[ $name ] = array(
+		'crop'   => $crop,
+	);
+
 
 ?>
 
