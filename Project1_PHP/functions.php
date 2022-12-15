@@ -303,13 +303,19 @@ add_action('customize_register', 'pm_footer');
 
 
 
-
-function my_custom_sizes() {
+add_action( 'afte_setup_theme', 'my_custom_sizes_setup' );
+function my_custom_sizes_setup() {
    add_image_size( 'custom-size1', 1024, 1024, true);
    add_image_size( 'custom-size2', 620, 280, false);
 }
 
-add_action( 'afte_setup_theme', 'my_custom_sizes' );
+function wpdocs_setup_theme() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 620, 280, false);
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
+
+
 
 ?>
 
