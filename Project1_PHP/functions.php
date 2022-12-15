@@ -301,24 +301,13 @@ function pm_footer($wp_customize) {
 
 add_action('customize_register', 'pm_footer');
 
-add_image_size( 'custom-size', 1024, 1024, true);
-add_image_size( 'custom-size2', 620, 280, false);
 
-function university_features($sizes) {
-   return array_merge ($sizes, array(
-      'custom-size' => __('Cropped'),
-      'custom-size2' => __('Standart'),
-   ));
+add_action( 'afte_setup_theme', 'my_custom_sizes' );
+
+function my_custom_sizes() {
+   add_image_size( 'custom-size', 1024, 1024, true);
+   add_image_size( 'custom-size2', 620, 280, false);
 }
-add_filter( 'image_size_names_choose', 'my_custom_sizes' );
-
-function my_custom_sizes( $sizes ) {
-    return array_merge( $sizes, array(
-        'your-custom-size' => __( 'Your Custom Size Name' ),
-    ) );
-}
-
-
 
 ?>
 
