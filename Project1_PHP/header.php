@@ -83,31 +83,9 @@
            <a href="tel:<?php echo get_theme_mod('pm-header-number') ?>"><button class="btn" type="button">get cash offer now</button></a>
         </div>
       </div>
-      <?php if ( !have_posts() ) : ?>
-			<div class="alert">
-				<?php esc_html_e( 'Sorry, no results were found.', 'virtue' ); ?>
-			</div>
-			<?php get_search_form(); 
-		endif; 
-
-		if( $summary == 'full' ){
-			while (have_posts()) : the_post(); 
-				get_template_part( 'templates/content', 'fullpost' ); 
-			endwhile; 
-		} else {
-			while (have_posts()) : the_post(); 
-				get_template_part( 'templates/content', get_post_format() );
-			endwhile; 
-		}
-
-		/**
-		* @hooked virtue_pagination - 10
-		*/
-		do_action( 'virtue_pagination' );
-		?>
       
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-header-image2', ['sizes']['custom-size2']));?>" style="object-fit:cover;width:100%;height:500px;">
+        <img class="bg-image" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-header-image2', 'custom-size2'));?>" style="object-fit:cover;width:100%;height:500px;">
         <div class="text-slideshow">
             <span class="text-slideshow-sm"><?php echo get_theme_mod('pm-header-subtitle2') ?></span>
             <span class="text-slideshow-xl"><?php echo get_theme_mod('pm-header-title') ?></span>
