@@ -316,7 +316,8 @@ function wpdocs_setup_theme() {
 }
 add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
 
-
+require_once trailingslashit( get_template_directory() ) . 'lib/image-functions.php';                     // Image functions
+require_once trailingslashit( get_template_directory() ) . 'lib/class-virtue-get-image.php';              // Image Class
 
 ?>
 
