@@ -308,7 +308,6 @@ function my_custom_sizes_setup() {
    add_image_size( 'custom-size1', 1024, 1024, true);
    add_image_size( 'custom-size2', 620, 280, false);
 }
-
 add_action( 'after_setup_theme', 'my_custom_sizes_setup' );
 
 function wpdocs_setup_theme() {
