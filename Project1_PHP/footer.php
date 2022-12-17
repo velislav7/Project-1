@@ -1,6 +1,6 @@
 <section class="ceo-section">
         <div class="bio-block">
-            <img id="ceo" src="<?php echo get_theme_mod('pm-footer-image') ?>" style="object-fit:cover;width:100%;">
+            <img id="ceo" src="<?php echo get_theme_mod('pm-footer-image') ?>" style="object-fit:cover; width:100%; height:100%">
             <h1 class="bio-block-headline"><?php echo get_theme_mod('pm-footer-headline') ?></h1>
             <div class="bio-block-text">
                <div class="number"><?php echo get_theme_mod('pm-header-number') ?></div>
