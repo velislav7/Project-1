@@ -296,6 +296,7 @@ function pm_footer($wp_customize) {
       'settings' => 'pm-footer-image'
    )));
 
+
  
 }
 
