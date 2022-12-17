@@ -200,7 +200,7 @@ function pm_index($wp_customize) {
 
 }
 
-add_action('customize_register', 'pm_grid');
+add_action('customize_register', 'pm_index');
 
 function pm_grid($wp_customize) {
    $wp_customize->add_section('pm-grid-section', array(
