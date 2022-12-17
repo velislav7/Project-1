@@ -179,7 +179,7 @@ function pm_index($wp_customize) {
    $wp_customize->add_setting('pm-index-image', array(
    ));
 
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-index-image-control', array(
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-index-image-control', array(
       'label' => 'Image',
       'section' => 'pm-index-section',
       'settings' => 'pm-index-image'
@@ -255,7 +255,7 @@ function pm_footer($wp_customize) {
    $wp_customize->add_setting('pm-footer-image', array(
    ));
 
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-footer-image-control', array(
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-footer-image-control', array(
       'label' => 'Image',
       'section' => 'pm-footer-section',
       'settings' => 'pm-footer-image'
