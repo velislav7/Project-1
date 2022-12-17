@@ -68,7 +68,7 @@
             <style>  
                section
             {  
-               background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-footer-image') ?>");
+               background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-header-image2') ?>");
                background-repeat: no-repeat;
                background-size: cover;  
             }  

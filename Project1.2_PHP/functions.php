@@ -56,6 +56,16 @@ function pm_header($wp_customize) {
       'section' => 'pm-header-section',
       'settings' => 'pm-header-subtitle'
    )));
+
+   // Image
+   $wp_customize->add_setting('pm-header-image2', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-header-image2-control', array(
+      'label' => 'Image',
+      'section' => 'pm-header-section',
+      'settings' => 'pm-header-image2'
+   )));
 }
 
 add_action('customize_register', 'pm_header');
