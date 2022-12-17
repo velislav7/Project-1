@@ -75,10 +75,11 @@
       </a>
     </header>
 
-    <div id="upper-page">
+    <section id="upper-page">
          <style>  
+			 section
          {  
-            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-footer-image') ?>");
+            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-header-image') ?>");
             background-repeat: no-repeat;
             background-size: cover;  
          }  
@@ -89,4 +90,4 @@
            <h4 id="subtitle"><?php echo get_theme_mod('pm-header-subtitle') ?></h4>
            <a href="#exactline"><button class="about-us-btn">ABOUT US</button></a>
         </div>
-    </div>
+    </section>
