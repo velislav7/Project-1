@@ -4,7 +4,6 @@ function anaction_theme_support(){
    //adds dynamic title tag support
    add_theme_support('title-tag');
    add_theme_support('custom-logo');
-   add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'anaction_theme_support');
 
@@ -301,22 +300,6 @@ function pm_footer($wp_customize) {
 }
 
 add_action('customize_register', 'pm_footer');
-
-
-
-
-function my_custom_sizes_setup() {
-   add_image_size( 'custom-size1', 1024, 1024, true);
-   add_image_size( 'custom-size2', 620, 280, false);
-}
-add_action( 'after_setup_theme', 'my_custom_sizes_setup' );
-
-function wpdocs_setup_theme() {
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 620, 280, false);
-}
-add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
-
 
 
 ?>

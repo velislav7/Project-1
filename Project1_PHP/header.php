@@ -70,12 +70,6 @@
             </span>
          </div>
       </a>
-    </header>
-    <?php 
-      if ( has_post_thumbnail() ) {
-      the_post_thumbnail( 'custom-size1' );
-   }
-    ?>
    <div class="slideshow-container">
       <div class="mySlides fade">
         <img class="bg-image" src="<?php echo get_theme_mod('pm-header-image1');?>" style="object-fit:cover;width:100%;height:500px;">
@@ -87,7 +81,7 @@
       </div>
       
       <div class="mySlides fade">
-        <img class="bg-image" src="<?php echo get_theme_mod('pm-header-image2', 'custom-size2');?>" style="object-fit:cover;width:100%;height:500px;">
+        <img class="bg-image" src="<?php echo get_theme_mod('pm-header-image2')?>" style="object-fit:cover;width:100%;height:500px;">
         <div class="text-slideshow">
             <span class="text-slideshow-sm"><?php echo get_theme_mod('pm-header-subtitle2') ?></span>
             <span class="text-slideshow-xl"><?php echo get_theme_mod('pm-header-title') ?></span>

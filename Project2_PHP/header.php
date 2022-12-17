@@ -18,10 +18,27 @@
     ?>
 </head>
 
+
 <body class = "home-page-template">
    <header class="page-header">
+      
       <div class="header-left">
-         <img class="logo" alt src="https://mmminvestmentgroup.com/wp-content/uploads/2022/09/LogoFinalMMM_5.png">
+          <?php
+         if(function_exists('the_custom_logo')){
+
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $logo = wp_get_attachment_image_src($custom_logo_id);
+
+         }
+         ?>
+         <?php
+         if ( has_post_thumbnail() ) {
+            the_post_thumbnail( 'custom-size' );
+         }
+         ?>
+
+
+         <img class="logo" src="<?php echo $logo[0] ?>">
 
          <div class="nav">
             <input type="checkbox" id="nav-check">
@@ -32,22 +49,22 @@
                 <span></span>
               </label>
             </div>
-            
+
+       
+
             <div class="nav-links">
-              <a class="active" href="hex.html">Home</a>
-              <a class="" href="index.html">Property Management</a>
+              <a class="active" href="/">Home</a>
             </div>
          </div>
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="hex.html">Home</a>
-              <a href="index.html">Property Managment</a>
+              <a href="/">Home</a>
             </div>
          </div> 
       </div>
-      <a class="header-right-link" href="">
+      <a class="header-right-link" href="tel:<?php echo get_theme_mod('pm-header-number') ?>">
          <div class="header-right">
             <span class="text-book">
                book
@@ -59,10 +76,17 @@
     </header>
 
     <div id="upper-page">
+         <style>  
+         {  
+            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-footer-image') ?>");
+            background-repeat: no-repeat;
+            background-size: cover;  
+         }  
+         </style>
         <div id="image-block">
-           <a id="number-link" href="tel:240-994-8325">240-994-8325</a>
-           <h1 id="headline">MMM Property Management</h1>
-           <h4 id="subtitle">We offer property management for all Short Term & Long Term Rentals Properties!</h4>
-           <a href="index.html#exactline"><button class="about-us-btn">ABOUT US</button></a>
+           <a id="number-link" href="tel:<?php echo get_theme_mod('pm-header-number') ?>"><?php echo get_theme_mod('pm-header-number') ?></a>
+           <h1 id="headline"><?php echo get_theme_mod('pm-header-title') ?></h1>
+           <h4 id="subtitle"><?php echo get_theme_mod('pm-header-subtitle') ?></h4>
+           <a href="#exactline"><button class="about-us-btn">ABOUT US</button></a>
         </div>
     </div>
