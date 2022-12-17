@@ -74,82 +74,202 @@ function pm_header($wp_customize) {
 
 add_action('customize_register', 'pm_header');
 
-
 function pm_index($wp_customize) {
    $wp_customize->add_section('pm-index-section', array(
       'title' => 'Body'
    ));
 
-   // Paragraph Headline
-   $wp_customize->add_setting('pm-index-paragraph-headline', array(
-      'default' => 'WE WANT TO BUY YOUR HOME FOR CASH'
+   // Main Headline
+   $wp_customize->add_setting('pm-index-main-headline', array(
+      'default' => 'Long & Short Term Rentals'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-headline-control', array(
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-main-headline-control', array(
+      'label' => 'Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-main-headline'
+   )));
+
+   // First Paragraph Headline
+   $wp_customize->add_setting('pm-index-paragraph1-headline', array(
+      'default' => 'Long Term Rentals (Over 30 Day Leases)'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph1-headline-control', array(
       'label' => 'Paragraph Headline',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-paragraph-headline'
+      'settings' => 'pm-index-paragraph1-headline'
    )));
 
-   // Paragraph Text
-   $wp_customize->add_setting('pm-index-paragraph-text', array(
-      'default' => 'We specialize in helping home owners who are facing hardship or special circumstances sell their property quickly. We understand the difficulties of these situations, and we have made it our goal to have a positive impact on those we work with. We truly care about people and we stand by our name: MMM Investments.'
+   // Second Paragraph Headline
+   $wp_customize->add_setting('pm-index-paragraph2-headline', array(
+      'default' => 'Short Term Rentals (Under 30 Day Leases)'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-text-control', array(
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph2-headline-control', array(
+      'label' => 'Paragraph Headline',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph2-headline'
+   )));
+
+   // Paragraph1 Text
+   $wp_customize->add_setting('pm-index-paragraph-row1', array(
+      'default' => 'Example Paragraph Text'
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row1-control', array(
       'label' => 'Paragraph text',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-paragraph-text',
-      'type' => 'textarea'
+      'settings' => 'pm-index-paragraph-row1'
    )));
 
-   // Images Text1
-   $wp_customize->add_setting('pm-index-images-text1', array(
-      'default' => 'Five star service, always.'
+   $wp_customize->add_setting('pm-index-paragraph-row2', array(
+      'default' => 'Example Paragraph Text'
    ));
-
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-images-text1-control', array(
-      'label' => 'Icon Text',
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row2-control', array(
+      'label' => 'Paragraph text',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-images-text1'
+      'settings' => 'pm-index-paragraph-row2'
    )));
 
-   // Images Text2
-   $wp_customize->add_setting('pm-index-images-text2', array(
-      'default' => '1,000s of happy customers.'
+   $wp_customize->add_setting('pm-index-paragraph-row3', array(
+      'default' => 'Example Paragraph Text'
    ));
-
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-images-text2-control', array(
-      'label' => 'Icon Text',
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row3-control', array(
+      'label' => 'Paragraph text',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-images-text2'
+      'settings' => 'pm-index-paragraph-row3'
    )));
 
-   // Images Text3
-   $wp_customize->add_setting('pm-index-images-text3', array(
-      'default' => 'We’re your neighbors'
+   $wp_customize->add_setting('pm-index-paragraph-row4', array(
+      'default' => 'Example Paragraph Text'
    ));
-
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-images-text3-control', array(
-      'label' => 'Icon Text',
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row4-control', array(
+      'label' => 'Paragraph text',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-images-text3'
+      'settings' => 'pm-index-paragraph-row4'
+   )));
+   
+
+   // Paragraph2 Text
+   $wp_customize->add_setting('pm-index-paragraph-row5', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row5-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row5'
    )));
 
-   // Images Text4
-   $wp_customize->add_setting('pm-index-images-text4', array(
-      'default' => 'Quick cash quarantee.'
+   $wp_customize->add_setting('pm-index-paragraph-row6', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row6-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row6'
+   )));
+   
+   $wp_customize->add_setting('pm-index-paragraph-row7', array(
+      'default' => 'Example Paragraph Text'
+   ));
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row7-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row7'
+   )));
+   
+   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-paragraph-row8-control', array(
+      'label' => 'Paragraph text',
+      'section' => 'pm-index-section',
+      'settings' => 'pm-index-paragraph-row8'
+   )));
+   $wp_customize->add_setting('pm-index-paragraph-row8', array(
+      'default' => 'Example Paragraph Text'
    ));
 
-   $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pm-index-images-text4-control', array(
-      'label' => 'Icon Text',
+   // Image
+   $wp_customize->add_setting('pm-index-image', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-index-image-control', array(
+      'label' => 'Image',
       'section' => 'pm-index-section',
-      'settings' => 'pm-index-images-text4'
+      'settings' => 'pm-index-image'
    )));
 
 }
 
-add_action('customize_register', 'pm_index');
+add_action('customize_register', 'pm_grid');
+
+function pm_grid($wp_customize) {
+   $wp_customize->add_section('pm-grid-section', array(
+      'title' => 'Image gallery'
+   ));
+
+   $wp_customize->add_setting('pm-grid-image1', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image1-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image1'
+   )));
+
+   $wp_customize->add_setting('pm-grid-image2', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image2-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image2'
+   )));
+
+   $wp_customize->add_setting('pm-grid-image3', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image3-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image3'
+   )));
+
+   $wp_customize->add_setting('pm-grid-image4', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image4-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image4'
+   )));
+   $wp_customize->add_setting('pm-grid-image5', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image5-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image5'
+   )));
+   $wp_customize->add_setting('pm-grid-image6', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image6-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image6'
+   )));
+   $wp_customize->add_setting('pm-grid-image7', array(
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-grid-image7-control', array(
+      'label' => 'Image',
+      'section' => 'pm-grid-section',
+      'settings' => 'pm-grid-image7'
+   )));
+
+}
+
+add_action('customize_register', 'pm_grid');
 
 
 function pm_footer($wp_customize) {

@@ -79,15 +79,15 @@
          <style>  
 			 section
          {  
-            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-header-image') ?>");
+            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("<?php echo get_theme_mod('pm-header-image1') ?>");
             background-repeat: no-repeat;
             background-size: cover;  
          }  
          </style>
         <div id="image-block">
-           <a id="number-link" href="tel:<?php echo get_theme_mod('pm-header-number') ?>"><?php echo get_theme_mod('pm-header-number') ?></a>
-           <h1 id="headline"><?php echo get_theme_mod('pm-header-title') ?></h1>
-           <h4 id="subtitle"><?php echo get_theme_mod('pm-header-subtitle') ?></h4>
-           <a href="#exactline"><button class="about-us-btn">ABOUT US</button></a>
+           <h1 id="headline">Page not Found</h1>
         </div>
     </section>
+    </body>
+
+</html>
