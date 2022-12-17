@@ -1,6 +1,6 @@
 <section class="ceo-section">
         <div class="bio-block">
-            <img id="ceo" src="<?php echo wp_get_attachment_url(get_theme_mod('pm-footer-image')) ?>">
+            <img id="ceo" src="<?php echo get_theme_mod('pm-footer-image') ?>">
             <h1 class="bio-block-headline"><?php echo get_theme_mod('pm-footer-headline') ?></h1>
             <div class="bio-block-text">
                <div class="number"><?php echo get_theme_mod('pm-header-number') ?></div>

@@ -81,7 +81,7 @@ function pm_header($wp_customize) {
    $wp_customize->add_setting('pm-header-image1', array(
    ));
 
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-header-image1-control', array(
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-header-image1-control', array(
       'label' => 'Slideshow Image 1',
       'section' => 'pm-header-section',
       'settings' => 'pm-header-image1'
@@ -91,7 +91,7 @@ function pm_header($wp_customize) {
    $wp_customize->add_setting('pm-header-image2', array(
    ));
 
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-header-image2-control', array(
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-header-image2-control', array(
       'label' => 'Slideshow Image 2',
       'section' => 'pm-header-section',
       'settings' => 'pm-header-image2'
@@ -290,7 +290,7 @@ function pm_footer($wp_customize) {
    $wp_customize->add_setting('pm-footer-image', array(
    ));
 
-   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'pm-footer-image-control', array(
+   $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'pm-footer-image-control', array(
       'label' => 'Image',
       'section' => 'pm-footer-section',
       'settings' => 'pm-footer-image'
