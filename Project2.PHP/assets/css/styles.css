@@ -1,0 +1,64 @@
+
+/* Navigation Bar */
+
+header{
+  box-shadow: 1px 1px 10px rgb(134, 134, 134);
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header-left{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo{
+  height: 60%;
+  margin-left: 2em;
+  padding-right:0.5em;
+  border-right: 3px solid rgb(187, 187, 187);
+}
+
+.header-right-link{
+  height: 100%;
+  text-decoration: none;
+  margin-right: 2em;
+}
+
+.header-right{
+  background-color: rgb(65, 19, 130);
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.header-right:hover{
+  transition: all;
+  transition-duration: 150ms;
+  background-color: rgb(73, 59, 182);
+}
+
+.text-book {
+  font-size: 1em;
+  font-weight: bolder;
+  padding:0em 1.5em;
+  text-transform: uppercase;
+  color:white;
+  text-align: center;
+}
+
+
