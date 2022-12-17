@@ -14,6 +14,8 @@
     <?php 
     wp_head(); 
     ?>
+</head>
+
 
 <body class = "home-page-template">
    <header class="page-header">
