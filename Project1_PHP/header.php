@@ -57,7 +57,7 @@
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">☰</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="/">Home</a>
+              <a href="/index.php">Home</a>
             </div>
          </div> 
       </div>
