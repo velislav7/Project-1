@@ -19,6 +19,7 @@
 
 <body class = "home-page-template">
    <header class="page-header">
+      
       <div class="header-left">
           <?php
          if(function_exists('the_custom_logo')){
@@ -70,6 +71,7 @@
             </span>
          </div>
       </a>
+    </header>
    <div class="slideshow-container">
       <div class="mySlides fade">
         <img class="bg-image" src="<?php echo get_theme_mod('pm-header-image1');?>" style="object-fit:cover;width:100%;height:500px;">
